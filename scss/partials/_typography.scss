@@ -10,6 +10,7 @@ h1, h2, h3, h4 {
     font-family: $heading-fontfamily;
     margin: .5em 0;
     font-weight: 400;
+    text-align: center;
 }
 
 h1 {
@@ -57,11 +58,31 @@ p {
 a {color:$color-links;}
 a:hover {color:$color-links-dark;}
 
+
 /* TYPE SPECIMEN */
 
 .hero-subhead {
     color: $color-accent;
 }
+
+.hero-h3 {
+    font-size: 2.25em;
+    line-height: 2.8125;
+    letter-spacing: .05em;
+    font-style: italic; 
+    text-transform: lowercase;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
