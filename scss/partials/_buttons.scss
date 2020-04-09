@@ -1,0 +1,43 @@
+// BUTTONS
+
+button {
+    font-size: inherit;
+}
+
+button,
+.button {
+    font-size: 0.875em;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    background-color: $color-links;
+    color: #fff;
+    padding: .9em 1.6em;
+    display: inline-block;
+    margin: .5em auto .5em auto;
+    border-radius: 3px;
+    margin-bottom: 2em;
+    border: 1px solid $color-links;
+    cursor: pointer;
+    text-decoration: none;
+    
+
+
+    &:hover {
+        color: $color-links;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: $color-links;
+    }
+
+    &.alt {
+        color: $color-links;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid $color-links;
+
+        &:hover {
+            background-color: $color-links;
+            color: #fff; 
+            border-color: $color-links;
+        }
+    }
+}
+

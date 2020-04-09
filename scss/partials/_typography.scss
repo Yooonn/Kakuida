@@ -1,0 +1,88 @@
+/* HEADING */
+
+body {
+    font-family: $body-fontfamily;
+    font-size: 100%;
+    line-height: 1.625em;
+}
+
+h1, h2, h3, h4 {
+    font-family: $heading-fontfamily;
+    margin: .5em 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3.4375em;
+    line-height: 1em;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.25em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    font-size: 2.25em;
+    line-height: 2.8125;
+    letter-spacing: .05em;
+    font-style: italic; 
+}
+
+h4 {
+    font-size: 1.25em;
+    line-height: 2.125em;
+    letter-spacing: 0.25em;
+}
+
+h5 {
+    font-family: $body-fontfamily;
+    font-weight: 400;
+    font-size: 0.875em;
+    color: $color-text-body;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    text-align: center;
+}
+
+p {
+    max-width: 43.75em;
+    color: $color-text-body;
+}
+
+// LINKS
+a {color:$color-links;}
+a:hover {color:$color-links-dark;}
+
+/* TYPE SPECIMEN */
+
+.hero-subhead {
+    color: $color-accent;
+}
+
+
+
+// HELPER
+// .sectionhead {
+//     text-align: center;
+//     font-family: $body-fontfamily;
+//     font-weight: 700;
+//     font-size: 1em;
+//     line-height: 1em;
+//     text-transform: uppercase;
+//     letter-spacing: .4em;
+//     margin-bottom: 2em;
+// }
+
+// .meta {
+//     display: block;
+//     font-size: .8em;
+//     color: $body-fontfamily;
+//     margin: 0 0 2em 0;
+
+// }
+
+

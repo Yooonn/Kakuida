@@ -1,0 +1,194 @@
+// site header
+
+.site-header, .site-footer {
+    background-color: $color-accent;
+    padding: 1em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        font-family: $body-fontfamily;
+        font-size: 1.5em;
+        margin: .5em 0 0 0; //to adjust baseline 
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-accent;
+    }
+}
+
+// site header
+.site-header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+}
+
+
+// site footer
+.site-footer {
+    justify-content: center;
+    margin-top: 6em;
+}
+
+
+/* SITE NAVIGATION */
+
+.site-nav {
+    margin-bottom:50px;
+    text-align: center;
+    width:960px;
+    margin:0 auto;
+    position:relative;
+    border: 1px solid yellow;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav ul li {
+    display: inline-block;
+
+    &:first-child {
+        padding-left:0;
+        margin-left:0;
+    }
+      
+    &:nth-child(2) {
+    padding-right: 80px;
+    }
+    &:nth-child(3) {
+    padding-left: 100px;
+    }
+    &:last-child {
+    padding-right:0;
+    }
+}
+
+.site-nav ul li a {
+    display: block;
+    padding: 1em 1.5em;
+    transition: all .4s ease;
+}
+
+@media (max-width:767px) {
+    .site-nav ul li a:hover {
+        background: #003;
+        color: #fff;
+    }
+}
+
+.logo {
+    max-width: 103px;
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    margin:0 0 0 -51.5px;
+}
+
+
+
+/* MENU BUITTON */
+
+.menu-button {
+    position: absolute;
+    top: 1.5em;
+    right: 4%;
+    display: flex;
+    /* float: right; */
+}
+
+
+@media (min-width: 768px) {
+    .menu-button {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+}
+
+/* NAVICON */
+
+.navicon {
+    cursor: default;
+    color: rgba(255,255,255,0);
+}
+
+.navicon::selection {
+    background: rgba(255,255,255,0);
+}
+
+.navicon::after {
+    cursor: pointer;
+    content: "\2630";
+    font-size: 1.5em;
+    color: rgba(0,0,0,1);
+    display: block;
+    margin-left: .5em;
+}
+
+
+.expanded .navicon::after {
+    content: "\2715";
+    transform: rotate(90deg);
+    transition: all .4s ease-out;
+}
+
+
+/* TOGGLE NAV */
+
+@media (max-width: 768px) {
+
+    .site-header.toggle-nav {
+        text-align: left;
+    }
+
+    .toggle-nav .site-nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .toggle-nav .site-nav ul {
+        display: none;
+    }
+
+    .toggle-nav .site-nav.expanded ul {
+        display: block;
+    }
+}
+
+section {
+    padding: 6em 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+// HERO SECTION
+
+.hero {
+    background-color: $color-hero-bg;
+    padding: 6em 1em;
+    color: #fff;
+    background-image: url(/img/Kakuida@2x-min.jpg);
+    background-size: cover;
+    max-width: 100%;
+}
+
+
+// SCROLL TRIGGERED ANIMAION
+[data-scroll] {
+    transition: opacity 1s;
+  }
+  [data-scroll="in"] {
+    opacity: 1;
+  }
+  [data-scroll="out"] {
+    opacity: 0;
+  }
+
