@@ -10,15 +10,16 @@ $color-links-dark: #BD3320;
 
 $color-accent: #BA8C60;
 $color-hero-bg: rgba(0, 0, 0, 1);
+$color-section-bg: #F9F8F3;
 
 
 // BREAKPOINTS
 $breakpoint-small: 768px;
 $breakpoint-medium: 1050px;
-$breakpoint-large: 1250px;
+$breakpoint-large: 1250px; 
 
 
-// IMPORT PARTIALS
+// IMPORT PARTIALS 
 @import 'partials/toc';
 @import 'partials/typography'; 
 @import 'partials/buttons'; 
