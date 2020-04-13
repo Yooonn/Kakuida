@@ -84,7 +84,7 @@ a:hover {
 
 /* TYPE SPECIMEN */
 .hero-mainhead {
-  font-size: 3.1em;
+  font-size: 3.4375em;
   text-transform: uppercase;
   font-style: normal;
   line-height: 1em;
@@ -100,6 +100,14 @@ a:hover {
   text-align: center;
   margin: 0 auto;
   margin-top: 2.5em; }
+
+.section-header h5 {
+  margin: .7em; }
+
+.section-header h2 {
+  color: #BA8C60;
+  text-transform: uppercase;
+  margin: 0; }
 
 button {
   font-size: inherit; }
@@ -359,11 +367,11 @@ body {
     display: block; } }
 
 section {
-  padding: 6em 0;
-  min-height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center; }
+  padding: 6em 0; }
+
+.container {
+  width: 100%;
+  padding: 0 4%; }
 
 .hero {
   background-color: black;
@@ -372,7 +380,11 @@ section {
   background-image: url(/img/Kakuida@2x-min.jpg);
   background-size: cover;
   background-position: center;
-  max-width: 100%; }
+  max-width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center; }
 
 [data-scroll] {
   -webkit-transition: opacity 1s;
