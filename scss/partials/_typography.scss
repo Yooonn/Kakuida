@@ -90,10 +90,31 @@ a:hover {color:$color-links-dark;}
     color: $color-accent;
     text-transform: uppercase;
     margin: 0;
+    margin-bottom: .8em;
 }
 
+.product-item .years {
+    font-size: 1.1em;
+    line-height: 0;
+    color: $color-accent;
+    font-style: italic; 
+    letter-spacing: .1em;
+}
 
+.product-item .item-name {
+    font-size: 1.05em;
+    line-height: 1.4em;
+    font-style: normal;
+    margin-top: .6em;
+    color: $color-text-dark;
+}
 
+.product-item .capacity {
+    font-size: .75em;
+    letter-spacing: .1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
 
 
 

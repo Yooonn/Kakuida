@@ -171,7 +171,7 @@ section {
     // background-color: yellow;
 }
 
-// HERO SECTION
+// HOME HERO SECTION
 
 .hero {
     background-color: $color-hero-bg;
@@ -185,6 +185,56 @@ section {
     display: grid;
     place-items: center;
 }
+
+.topselling .container {
+    // background-color: rgb(201, 201, 201);
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 12px 12px #00000029;
+    padding: 76px;
+} 
+
+.deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+    // background-color: pink;
+}
+
+.product-item {
+    display: flex;
+    flex-flow: column;
+    max-width: 210px;
+    margin: 1em auto;
+    margin-bottom: 0;
+    // border: 1px solid grey;
+}
+
+.product-item .item-img {
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // SCROLL TRIGGERED ANIMAION
