@@ -61,17 +61,27 @@ a:hover {color:$color-links-dark;}
 
 /* TYPE SPECIMEN */
 
-.hero-subhead {
-    color: $color-accent;
+.hero-mainhead {
+    font-size: 3.1em;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 1em;
+    margin: .5em 0 .8em 0;
 }
 
-.hero-h3 {
-    font-size: 2.25rem;
-    line-height: 2.8125;
-    letter-spacing: .05em;
+.hero-subhead {
+    color: $color-accent;
+    font-family: $heading-fontfamily;
+    font-weight: 400;
+    font-size: 1.5em;
+    // text-transform: uppercase;
     font-style: italic; 
-    text-transform: lowercase;
+    letter-spacing: .1em;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2.5em;
 }
+
 
 
 
