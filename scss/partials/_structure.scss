@@ -168,6 +168,7 @@ section {
 .container {
     width: 100%;
     padding: 0 4%;
+    text-align: center;
     // background-color: yellow;
 }
 
@@ -189,12 +190,20 @@ section {
 
 /* HOME - TOP SELLING VINEGARS */
 
-.topselling .container {
+
+.topselling {
+    background-image: url(../img/bg-pattern01@2x-min.jpg);
+    background-size: cover;
+    background-position: center;
+    // min-height: 100px;
+    // position: relative;
+}
+
+.topselling-card .container {
     background-color: rgb(255, 255, 255);
     max-width: 85%;
     height: auto;
     border-radius: 10px;
-    // box-shadow: 0px 12px 12px #00000029;
     box-shadow: 0px 80px 120px -60px rgba(63,63,31,0.3);
     padding: 76px;
     margin-top: -12%;
@@ -222,13 +231,21 @@ section {
     margin-bottom: 1em;
 }
 
-.pattern-cover {
-    background-image: url(/Kakuida/img/bg-pattern01@2x-min.jpg);
+/* HOME - WHAT IS BLACK VINEGAR? */
+
+.blackvinegar {
+    background-image: url(../../img/bg-paper01@2x-min.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 400px;
-    position: relative;
+    min-height: 788px;
 }
+
+.process {
+    mix-blend-mode: darken;
+    max-width: 95%;
+    height: auto;
+}
+
 
 
 
@@ -252,4 +269,4 @@ section {
 // SCROLL TRIGGERED ANIMAION
 [data-scroll] {transition: opacity 1s;}
 [data-scroll="in"] {opacity: 1;}
-[data-scroll="out"] {opacity: 0;}
+// [data-scroll="out"] {opacity: 0;}

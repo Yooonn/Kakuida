@@ -67,14 +67,17 @@ h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.875em;
-  color: #626161;
+  color: #858382;
   text-transform: uppercase;
   letter-spacing: .3em;
   text-align: center; }
 
 p {
   max-width: 43.75em;
-  color: #626161; }
+  color: #858382;
+  margin: 2em auto;
+  font-weight: 300;
+  letter-spacing: .01em; }
 
 a {
   color: #CE1F0A; }
@@ -163,6 +166,23 @@ button,
       background-color: #CE1F0A;
       color: #fff;
       border-color: #CE1F0A; }
+
+.underline-link {
+  font-size: .8em;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: #858382;
+  padding: .5em 0;
+  margin: .5em auto .5em auto;
+  margin-bottom: 2em;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1.5px solid #858382;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear; }
+  .underline-link:hover {
+    border-bottom: 1.5px solid #CE1F0A; }
 
 img {
   max-width: 100%;
@@ -392,7 +412,8 @@ section {
 
 .container {
   width: 100%;
-  padding: 0 4%; }
+  padding: 0 4%;
+  text-align: center; }
 
 /* HOME - HERO SECTION */
 .hero {
@@ -409,7 +430,12 @@ section {
   place-items: center; }
 
 /* HOME - TOP SELLING VINEGARS */
-.topselling .container {
+.topselling {
+  background-image: url(../img/bg-pattern01@2x-min.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.topselling-card .container {
   background-color: white;
   max-width: 85%;
   height: auto;
@@ -442,12 +468,17 @@ section {
 .product-item .item-img {
   margin-bottom: 1em; }
 
-.pattern-cover {
-  background-image: url(/Kakuida/img/bg-pattern01@2x-min.jpg);
+/* HOME - WHAT IS BLACK VINEGAR? */
+.blackvinegar {
+  background-image: url(../../img/bg-paper01@2x-min.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 400px;
-  position: relative; }
+  min-height: 788px; }
+
+.process {
+  mix-blend-mode: darken;
+  max-width: 95%;
+  height: auto; }
 
 [data-scroll] {
   -webkit-transition: opacity 1s;
@@ -456,6 +487,3 @@ section {
 
 [data-scroll="in"] {
   opacity: 1; }
-
-[data-scroll="out"] {
-  opacity: 0; }

@@ -40,3 +40,23 @@ button,
     }
 }
 
+.underline-link {
+    font-size: .8em;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: $color-text-body;
+    padding: .5em 0;
+    margin: .5em auto .5em auto;
+    margin-bottom: 2em;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1.5px solid $color-text-body;
+    transition: all 0.25s linear;
+    // position: relative;
+    // background-color: lawngreen;
+
+    &:hover{
+        border-bottom: 1.5px solid $color-links;
+    }
+}
+
