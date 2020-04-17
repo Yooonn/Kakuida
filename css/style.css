@@ -83,7 +83,7 @@ a {
   color: #CE1F0A; }
 
 a:hover {
-  color: #BD3320; }
+  color: #b31503; }
 
 /* TYPE SPECIMEN */
 .hero-mainhead {
@@ -160,9 +160,9 @@ button,
   transition: all 0.2s ease; }
   button:hover,
   .button:hover {
-    color: #CE1F0A;
-    background-color: rgba(0, 0, 0, 0);
-    border-color: #CE1F0A; }
+    color: #fff;
+    background-color: #b31503;
+    border-color: #b31503; }
   button.alt,
   .button.alt {
     color: #CE1F0A;
@@ -193,6 +193,10 @@ input[type="submit"] {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
+  input[type="submit"]:hover {
+    color: #fff;
+    background-color: #b31503;
+    border-color: #b31503; }
 
 .underline-link {
   font-size: .8em;
@@ -454,7 +458,8 @@ section {
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  place-items: center; }
+  place-items: center;
+  background-attachment: fixed; }
 
 /* HOME - TOP SELLING VINEGARS */
 .topselling {
@@ -518,7 +523,7 @@ section {
 .signup {
   background-image: url(../../img/bg-kagoshima@2x-min.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   background-repeat: no-repeat; }
 
 /* FORMS */
@@ -546,14 +551,22 @@ form {
 /* HOME - FIND US ON AMAZON */
 .amazon {
   background-image: url(../../img/Blackvinegar-products@2x-min.jpg);
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: bottom; }
+  background-position: bottom center;
+  height: 40em; }
 
 .amazon-logo {
   max-width: 45px;
   height: auto;
   margin-bottom: 1.4em; }
+
+/* FOOTER */
+.site-footer {
+  background-image: url(../../img/bg-black-pattern@2x-min.jpg);
+  background-size: cover;
+  height: 18em;
+  margin-top: 4em; }
 
 [data-scroll] {
   -webkit-transition: opacity 1s;

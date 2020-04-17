@@ -23,9 +23,9 @@ button,
     
 
     &:hover {
-        color: $color-links;
-        background-color: rgba(0, 0, 0, 0);
-        border-color: $color-links;
+        color: #fff;
+        background-color: $color-links-dark;
+        border-color: $color-links-dark;
     }
 
     &.alt {
@@ -58,12 +58,13 @@ input[type="submit"] {
     cursor: pointer;
     text-decoration: none;
     transition: all.2s ease;
+
+    &:hover {
+        color: #fff;
+        background-color: $color-links-dark;
+        border-color: $color-links-dark;
+    }
 }
-
-
-
-
-
 
 .underline-link {
     font-size: .8em;

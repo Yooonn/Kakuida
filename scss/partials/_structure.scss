@@ -185,6 +185,7 @@ section {
     min-height: 100vh;
     display: grid;
     place-items: center;
+    background-attachment: fixed;
     // position: relative;
 }
 
@@ -262,7 +263,7 @@ section {
 .signup {
     background-image: url(../../img/bg-kagoshima@2x-min.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
 }
 
@@ -293,10 +294,10 @@ form {
 
 .amazon {
     background-image: url(../../img/Blackvinegar-products@2x-min.jpg);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom;
-
+    background-position: bottom center;
+    height: 40em;
 }
 
 .amazon-logo {
@@ -305,8 +306,14 @@ form {
     margin-bottom: 1.4em;
 }
 
+/* FOOTER */
 
-
+.site-footer {
+    background-image: url(../../img/bg-black-pattern@2x-min.jpg);
+    background-size: cover;
+    height: 18em;
+    margin-top: 4em;
+}
 
 
 
