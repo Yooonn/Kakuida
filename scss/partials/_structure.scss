@@ -263,51 +263,30 @@ section {
     background-image: url(../../img/bg-kagoshima@2x-min.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 788px;
+    background-repeat: no-repeat;
 }
 
 /* FORMS */
 
 form {
-    max-width: 600px;
+    width: 628px;
+    margin: 3em auto;
 }
 
-label, input, textarea {
-    display: block;
-    width: 100%;
+.input {
+    display: flex;
+    align-items: center;
 }
 
-label {
-    position:absolute;
-    transform:translateY(9px);
-    left:13px;
-    color:#626161;
-    opacity: .5;
-    transition:all 0.25s ease;
-    -webkit-backface-visibility: hidden;
-    pointer-events: none;
-    font-size: .875em;
-  }
+.inputbox {
+    height: 50px;
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-indent: 10%;
+    margin-left: 1em;
 
-
-
-
-
-input[type=text], textarea {
-    padding: 1em;
-    font-size: 1em;
-    background: rgb(255, 255, 255);
-    color: #444
-}
-
-textarea {
-    min-height: 50px;
-}
-
-input[type=submit] {
-    margin-top: 1em;
-    width: auto;
-    font-size: inherit;
 }
 
 /* HOME - FIND US ON AMAZON */

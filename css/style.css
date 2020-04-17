@@ -133,11 +133,15 @@ a:hover {
   margin-top: 0;
   margin-bottom: 1em; }
 
+.h2-italic {
+  font-style: italic;
+  text-transform: none; }
+
 button {
   font-size: inherit; }
 
 button,
-.button, input[type="submit"] {
+.button {
   font-size: .8em;
   letter-spacing: .3em;
   text-transform: uppercase;
@@ -155,20 +159,40 @@ button,
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   button:hover,
-  .button:hover, input[type="submit"]:hover {
+  .button:hover {
     color: #CE1F0A;
     background-color: rgba(0, 0, 0, 0);
     border-color: #CE1F0A; }
   button.alt,
-  .button.alt, input[type="submit"].alt {
+  .button.alt {
     color: #CE1F0A;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #CE1F0A; }
     button.alt:hover,
-    .button.alt:hover, input[type="submit"].alt:hover {
+    .button.alt:hover {
       background-color: #CE1F0A;
       color: #fff;
       border-color: #CE1F0A; }
+
+input[type="submit"] {
+  font-size: .8em;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  background-color: #CE1F0A;
+  color: #fff;
+  height: 50px;
+  padding: .9em 1.6em;
+  display: inline-block;
+  margin: 0;
+  margin-left: .8em;
+  margin-right: 0;
+  border-radius: 3px;
+  border: 1px solid #CE1F0A;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 .underline-link {
   font-size: .8em;
@@ -495,44 +519,29 @@ section {
   background-image: url(../../img/bg-kagoshima@2x-min.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 788px; }
+  background-repeat: no-repeat; }
 
 /* FORMS */
 form {
-  max-width: 600px; }
+  width: 628px;
+  margin: 3em auto; }
 
-label, input, textarea {
-  display: block;
-  width: 100%; }
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-label {
-  position: absolute;
-  -webkit-transform: translateY(9px);
-  -ms-transform: translateY(9px);
-  transform: translateY(9px);
-  left: 13px;
-  color: #626161;
-  opacity: .5;
-  -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
-  font-size: .875em; }
-
-input[type=text], textarea {
-  padding: 1em;
-  font-size: 1em;
-  background: white;
-  color: #444; }
-
-textarea {
-  min-height: 50px; }
-
-input[type=submit] {
-  margin-top: 1em;
-  width: auto;
-  font-size: inherit; }
+.inputbox {
+  height: 50px;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-indent: 10%;
+  margin-left: 1em; }
 
 /* HOME - FIND US ON AMAZON */
 .amazon {

@@ -5,7 +5,7 @@ button {
 }
 
 button,
-.button, input[type="submit"] {
+.button {
     font-size: .8em;
     letter-spacing: .3em;
     text-transform: uppercase;
@@ -19,7 +19,7 @@ button,
     border: 1px solid $color-links;
     cursor: pointer;
     text-decoration: none;
-    transition:all.2s ease;
+    transition: all.2s ease;
     
 
     &:hover {
@@ -40,6 +40,30 @@ button,
         }
     }
 }
+
+input[type="submit"] {
+    font-size: .8em;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    background-color: $color-links;
+    color: #fff;
+    height: 50px;
+    padding: .9em 1.6em;
+    display: inline-block;
+    margin: 0;
+    margin-left: .8em;
+    margin-right: 0;
+    border-radius: 3px;
+    border: 1px solid $color-links;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all.2s ease;
+}
+
+
+
+
+
 
 .underline-link {
     font-size: .8em;
