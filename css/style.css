@@ -137,7 +137,7 @@ button {
   font-size: inherit; }
 
 button,
-.button {
+.button, input[type="submit"] {
   font-size: .8em;
   letter-spacing: .3em;
   text-transform: uppercase;
@@ -150,19 +150,22 @@ button,
   margin-bottom: 2em;
   border: 1px solid #CE1F0A;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
   button:hover,
-  .button:hover {
+  .button:hover, input[type="submit"]:hover {
     color: #CE1F0A;
     background-color: rgba(0, 0, 0, 0);
     border-color: #CE1F0A; }
   button.alt,
-  .button.alt {
+  .button.alt, input[type="submit"].alt {
     color: #CE1F0A;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #CE1F0A; }
     button.alt:hover,
-    .button.alt:hover {
+    .button.alt:hover, input[type="submit"].alt:hover {
       background-color: #CE1F0A;
       color: #fff;
       border-color: #CE1F0A; }
@@ -479,6 +482,69 @@ section {
   mix-blend-mode: darken;
   max-width: 95%;
   height: auto; }
+
+/* HOME - OUR CUSTOMERS SAY */
+.testimonial {
+  background-image: url(../../img/bg-blackvinegar01@2x-min.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 788px; }
+
+/* HOME - DON'T MISS OUT */
+.signup {
+  background-image: url(../../img/bg-kagoshima@2x-min.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 788px; }
+
+/* FORMS */
+form {
+  max-width: 600px; }
+
+label, input, textarea {
+  display: block;
+  width: 100%; }
+
+label {
+  position: absolute;
+  -webkit-transform: translateY(9px);
+  -ms-transform: translateY(9px);
+  transform: translateY(9px);
+  left: 13px;
+  color: #626161;
+  opacity: .5;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: .875em; }
+
+input[type=text], textarea {
+  padding: 1em;
+  font-size: 1em;
+  background: white;
+  color: #444; }
+
+textarea {
+  min-height: 50px; }
+
+input[type=submit] {
+  margin-top: 1em;
+  width: auto;
+  font-size: inherit; }
+
+/* HOME - FIND US ON AMAZON */
+.amazon {
+  background-image: url(../../img/Blackvinegar-products@2x-min.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+.amazon-logo {
+  max-width: 45px;
+  height: auto;
+  margin-bottom: 1.4em; }
 
 [data-scroll] {
   -webkit-transition: opacity 1s;
