@@ -162,13 +162,20 @@ footer .menu {
   margin-top: 2em;
   font-size: 2.8em; }
 
-.h2-head-italic {
+.about .h2-head-italic {
   color: #BA8C60;
   font-style: italic;
   letter-spacing: 0;
   line-height: 1.4em;
   width: 653px;
-  margin: 0 auto; }
+  margin: .8em auto;
+  padding-top: .9em; }
+
+.about .history-p {
+  max-width: 620px; }
+
+.about .break {
+  margin-bottom: 1em; }
 
 button {
   font-size: inherit; }
@@ -631,6 +638,11 @@ form {
   margin-bottom: 20px; }
 
 /* ABOUT */
+.about .history {
+  background-image: url(../../img/bg-paper01@2x-min.jpg);
+  background-size: cover;
+  background-position: center; }
+
 .about .hero {
   background-image: url(/img/kakuida-blackvinegar-hero-bg01.jpg);
   background-size: cover;
@@ -638,6 +650,13 @@ form {
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
+
+.about .video {
+  border: none;
+  -webkit-box-shadow: 0px 60px 120px -60px #3f3f1f;
+  box-shadow: 0px 60px 120px -60px #3f3f1f;
+  position: relative;
+  margin-top: -20%; }
 
 [data-scroll] {
   -webkit-transition: opacity 1s;

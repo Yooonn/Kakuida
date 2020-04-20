@@ -160,17 +160,23 @@ footer .menu {
     font-size: 2.8em;
 }
 
-.h2-head-italic {
+.about .h2-head-italic {
     color: $color-accent;
     font-style: italic;
     letter-spacing: 0;
     line-height: 1.4em;
     width: 653px;
-    margin: 0 auto;
-
+    margin: .8em auto;
+    padding-top: .9em;
 }
 
+.about .history-p {
+    max-width: 620px;
+}
 
+.about .break {
+    margin-bottom: 1em;
+}
 
 
 

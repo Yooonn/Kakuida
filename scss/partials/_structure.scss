@@ -355,6 +355,13 @@ form {
 
 /* ABOUT */
 
+.about .history {
+    background-image: url(../../img/bg-paper01@2x-min.jpg);
+    background-size: cover;
+    background-position: center;
+    // min-height: 788px;
+}
+
 .about .hero {
     background-image: url(/img/kakuida-blackvinegar-hero-bg01.jpg);
     background-size: cover;
@@ -365,8 +372,12 @@ form {
 
 }
 
-
-
+.about .video {
+    border: none;
+    box-shadow: 0px 60px 120px -60px rgb(63, 63, 31);
+    position: relative;
+    margin-top: -20%;
+}
 
 
 
