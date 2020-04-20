@@ -137,6 +137,25 @@ a:hover {
   font-style: italic;
   text-transform: none; }
 
+footer .col ul li {
+  color: #BA8C60;
+  font-weight: 300;
+  font-size: .875em;
+  letter-spacing: .1em;
+  line-height: 1.3em;
+  padding-bottom: .7em; }
+
+footer .menu {
+  text-transform: uppercase; }
+
+.copyright-text {
+  font-size: .7em;
+  letter-spacing: .2em;
+  color: #BA8C60;
+  text-transform: uppercase;
+  padding-top: 17em;
+  max-width: 1050px; }
+
 button {
   font-size: inherit; }
 
@@ -566,7 +585,36 @@ form {
   background-image: url(../../img/bg-black-pattern@2x-min.jpg);
   background-size: cover;
   height: 18em;
-  margin-top: 4em; }
+  margin-top: 4em;
+  display: block; }
+
+.footer {
+  padding: 0; }
+
+.col {
+  width: 20%;
+  height: auto;
+  float: left;
+  padding-top: 0;
+  padding-left: 1em; }
+
+.col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+
+.text {
+  padding-left: 3em; }
+
+.social {
+  padding-left: 4.5em;
+  padding-top: .4em; }
+
+.social ul li {
+  display: inline-block;
+  padding-right: 30px;
+  margin-bottom: 20px; }
 
 [data-scroll] {
   -webkit-transition: opacity 1s;

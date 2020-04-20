@@ -124,6 +124,37 @@ a:hover {color:$color-links-dark;}
     text-transform: none;
 }
 
+footer .col ul li {
+    color: $color-accent;
+    font-weight: 300;
+    font-size: .875em;
+    // text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 1.3em;
+    padding-bottom: .7em;
+}
+
+footer .menu {
+    text-transform: uppercase;
+}
+
+// footer .menu li :hover {
+//     color: $color-accent-light;
+//     transition: .1s;
+// }
+
+.copyright-text {
+    font-size: .7em;
+    letter-spacing: .2em;
+    color: $color-accent;
+    text-transform: uppercase;
+    padding-top: 17em;
+    max-width: 1050px;
+}
+
+
+
+
 
 
 
