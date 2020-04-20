@@ -85,7 +85,7 @@ a {
 a:hover {
   color: #b31503; }
 
-/* TYPE SPECIMEN */
+/* HOME */
 .hero-mainhead {
   font-size: 3.4375em;
   text-transform: uppercase;
@@ -135,7 +135,8 @@ a:hover {
 
 .h2-italic {
   font-style: italic;
-  text-transform: none; }
+  text-transform: none;
+  color: #BA8C60; }
 
 footer .col ul li {
   color: #BA8C60;
@@ -155,6 +156,19 @@ footer .menu {
   text-transform: uppercase;
   padding-top: 17em;
   max-width: 1050px; }
+
+/* ABOUT */
+.about .hero-head {
+  margin-top: 2em;
+  font-size: 2.8em; }
+
+.h2-head-italic {
+  color: #BA8C60;
+  font-style: italic;
+  letter-spacing: 0;
+  line-height: 1.4em;
+  width: 653px;
+  margin: 0 auto; }
 
 button {
   font-size: inherit; }
@@ -615,6 +629,15 @@ form {
   display: inline-block;
   padding-right: 30px;
   margin-bottom: 20px; }
+
+/* ABOUT */
+.about .hero {
+  background-image: url(/img/kakuida-blackvinegar-hero-bg01.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  min-height: 60vh;
+  background-repeat: no-repeat; }
 
 [data-scroll] {
   -webkit-transition: opacity 1s;
