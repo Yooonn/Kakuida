@@ -380,7 +380,53 @@ form {
 }
 
 
+// LAYOUT SECTION
 
+.split-crossed-left {
+    @media (min-width: $breakpoint-small) {
+        
+    .container {
+        display: flex;
+        align-items: center;
+        // flex-direction: row-reverse;
+    }
+
+    .image-block {
+        width: 50%;
+        // background: pink;
+    }
+
+    .text-block {
+        width: 50%;
+        // background: aqua;
+        transform: translateX(-2em);
+    }
+    }
+}
+
+.split-crossed-reversed {
+    @media (min-width: $breakpoint-small) {
+        
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .image-block {
+        width: 50%;
+        background: pink;
+    }
+
+    .text-block {
+        width: 50%;
+        background: aqua;
+        margin-right: -2em;
+        // transform: translateX(2em)
+        
+    }
+    }
+}
 
 
 
@@ -398,4 +444,4 @@ form {
 // SCROLL TRIGGERED ANIMAION
 [data-scroll] {transition: opacity 1s;}
 [data-scroll="in"] {opacity: 1;}
-[data-scroll="out"] {opacity: 0;}
+// [data-scroll="out"] {opacity: 0;}

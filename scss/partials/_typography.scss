@@ -3,7 +3,7 @@
 body {
     font-family: $body-fontfamily;
     font-size: 100%;
-    line-height: 1.625em;
+    line-height: 1.825em;
 }
 
 h1, h2, h3, h4 {
@@ -178,9 +178,18 @@ footer .menu {
     margin-bottom: 1em;
 }
 
+.about .main-head {
+    color: $color-links;
+    font-size: 1.5em;;
+    text-align: left;
+    font-style: italic;
+    text-transform: capitalize;
+    letter-spacing: .1em;
+}
 
-
-
+.about .paragraph-left {
+    text-align: left;
+}
 
 
 
