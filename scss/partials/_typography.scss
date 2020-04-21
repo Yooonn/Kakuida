@@ -172,6 +172,7 @@ footer .menu {
 
 .about .history-p {
     max-width: 620px;
+    transition-delay: .1s;
 }
 
 .about .break {
@@ -184,12 +185,33 @@ footer .menu {
     text-align: left;
     font-style: italic;
     text-transform: capitalize;
-    letter-spacing: .1em;
+    letter-spacing: .07em;
+    margin-bottom: 0;
 }
 
 .about .paragraph-left {
     text-align: left;
+    margin-top: .5em;
+    margin-left: 0;
+    margin-right: 0;
+    width: 389px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
