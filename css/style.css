@@ -665,3 +665,6 @@ form {
 
 [data-scroll="in"] {
   opacity: 1; }
+
+[data-scroll="out"] {
+  opacity: 0; }
