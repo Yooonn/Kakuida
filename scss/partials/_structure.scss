@@ -276,7 +276,7 @@ form {
 
 .input {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .inputbox {
@@ -287,6 +287,7 @@ form {
     letter-spacing: .2em;
     text-indent: 1em;
     margin-left: 1em;
+    min-width: 20em;
 
 }
 
