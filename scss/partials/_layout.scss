@@ -53,20 +53,19 @@ body {
 
 
 
-/* PRODUCT LISTS */
+/* PRODUCT FILTER LISTS */
 
 .container.list {
     overflow: hidden;
     padding: 0;
-    border: 1px solid blue;
+    // border: 1px solid blue;
   }
   
   .filterDiv {
     float: left;
-    margin: 10%;
-    padding: 20px;
     display: none; /* Hidden by default */
-    border: 1px solid pink;
+    margin: 1.445em;
+    // border: 1px solid pink;
   }
   
   /* The "show" class is added to the filtered elements */
@@ -79,22 +78,3 @@ body {
 
 
   
-//   /* Style the buttons */
-//   .btn {
-//     border: none;
-//     outline: none;
-//     padding: 12px 16px;
-//     background-color: #f1f1f1;
-//     cursor: pointer;
-//   }
-  
-//   /* Add a light grey background on mouse-over */
-//   .btn:hover {
-//     background-color: #ddd;
-//   }
-  
-//   /* Add a dark background to the active button */
-//   .btn.active {
-//     background-color: #666;
-//     color: white;
-//   }

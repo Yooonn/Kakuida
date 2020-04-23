@@ -286,6 +286,27 @@ input[type="submit"] {
   .underline-link:hover {
     border-bottom: 1.5px solid #CE1F0A; }
 
+.btn {
+  color: #858382;
+  font-weight: 400;
+  letter-spacing: .15em;
+  margin: .8em;
+  border: none;
+  outline: none;
+  padding: 12px 1px 12px 4px;
+  background-color: white;
+  cursor: pointer; }
+
+.btn:hover {
+  color: #CE1F0A;
+  background-color: #ffff; }
+
+.btn.active {
+  background-color: white;
+  color: #CE1F0A;
+  border-radius: 0;
+  border-bottom: 0.15em solid #CE1F0A; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -320,19 +341,16 @@ body {
   .container {
     max-width: 1050px; } }
 
-/* PRODUCT LISTS */
+/* PRODUCT FILTER LISTS */
 .container.list {
   overflow: hidden;
-  padding: 0;
-  border: 1px solid blue; }
+  padding: 0; }
 
 .filterDiv {
   float: left;
-  margin: 10%;
-  padding: 20px;
   display: none;
   /* Hidden by default */
-  border: 1px solid pink; }
+  margin: 1.445em; }
 
 /* The "show" class is added to the filtered elements */
 .show {

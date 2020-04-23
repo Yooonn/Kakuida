@@ -86,3 +86,29 @@ input[type="submit"] {
     }
 }
 
+// FILTER BUTTON
+
+.btn {
+    color: $color-text-body;
+    font-weight: 400;
+    letter-spacing: .15em;
+    // text-transform: lowercase;
+    margin: .8em;
+    border: none;
+    outline: none;
+    padding: 12px 1px 12px 4px;
+    background-color: white;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    color: $color-links;
+    background-color: #ffff;
+  }
+  
+.btn.active {
+    background-color: rgb(255, 255, 255);
+    color: $color-links;
+    border-radius: 0;
+    border-bottom: 0.15em solid $color-links;
+}
