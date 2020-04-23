@@ -218,6 +218,23 @@ footer .menu {
   color: #393939;
   margin-top: 0; }
 
+.contact .contact-area h3 {
+  color: #BA8C60;
+  text-align: left;
+  line-height: 0;
+  margin-bottom: 1.3em;
+  margin-top: 1.5em; }
+
+.contact .label {
+  font-size: 75%;
+  text-align: left;
+  letter-spacing: .25em;
+  margin-top: 1.7em;
+  margin-bottom: 0; }
+
+.contact .info {
+  margin: 0; }
+
 button {
   font-size: inherit; }
 
@@ -367,6 +384,8 @@ body {
 .show {
   display: block; }
 
+/* GRID */
+/* Default Grid (on SMALL+ Screen Sizes) */
 .row .column {
   margin-bottom: 2%;
   padding: 1em; }
@@ -663,7 +682,7 @@ form {
   font-family: inherit;
   text-transform: uppercase;
   letter-spacing: .2em;
-  text-indent: 10%;
+  text-indent: 1em;
   margin-left: 1em; }
 
 /* HOME - FIND US ON AMAZON */
@@ -723,8 +742,8 @@ form {
 
 .about .hero {
   background-image: url(/img/kakuida-blackvinegar-hero-bg01.jpg);
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top center;
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
@@ -810,8 +829,8 @@ form {
 
 .product .hero {
   background-image: url(/img/kakuida-blackvinegar-hero-bg02.jpg);
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top center;
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
@@ -837,3 +856,41 @@ form {
 
 .product .site-footer {
   margin-top: 0; }
+
+/* CONTACT */
+.contact .hero {
+  background-image: url(/img/kakuida-blackvinegar-hero-bg03.jpg);
+  background-size: contain;
+  background-position: top center;
+  max-width: 100%;
+  min-height: 60vh;
+  background-repeat: no-repeat; }
+
+.contact-area {
+  background-image: url(/img/bg-kagoshima-large@2x-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.contact .column {
+  text-align: left; }
+
+.contact .site-footer {
+  margin-top: 0; }
+
+/* FORMS */
+.contact form {
+  max-width: 410px;
+  margin-top: .5em; }
+
+.contact input, .contact textarea {
+  display: block;
+  width: 100%;
+  margin-left: 0; }
+
+.contact input[type=text], .contact textarea {
+  padding: 1em;
+  margin-bottom: 1.2em; }
+
+.contact textarea {
+  min-height: 150px; }
