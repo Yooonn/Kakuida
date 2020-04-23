@@ -208,6 +208,16 @@ footer .menu {
   text-align: left;
   max-width: 30em; }
 
+.product .sub-text {
+  color: #BA8C60; }
+
+.product .main-text {
+  font-size: 2em;
+  letter-spacing: .03em;
+  line-height: 1.4em;
+  color: #393939;
+  margin-top: 0; }
+
 button {
   font-size: inherit; }
 
@@ -291,6 +301,7 @@ input[type="submit"] {
   font-weight: 400;
   letter-spacing: .15em;
   margin: .8em;
+  margin-bottom: 2em;
   border: none;
   outline: none;
   padding: 12px 1px 12px 4px;
@@ -812,13 +823,17 @@ form {
   background-repeat: no-repeat;
   min-height: 50%; }
 
-[data-scroll] {
-  -webkit-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s; }
+.product .call-to-action-1 {
+  background-image: url(/img/bg-Kakuida-CallToAction@2x-min.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  padding-bottom: 0; }
 
-[data-scroll="in"] {
-  opacity: 1; }
+.product .section-header {
+  padding-top: 10em;
+  padding-bottom: 3em; }
 
-[data-scroll="out"] {
-  opacity: 0; }
+.product .site-footer {
+  margin-top: 0; }

@@ -94,6 +94,7 @@ input[type="submit"] {
     letter-spacing: .15em;
     // text-transform: lowercase;
     margin: .8em;
+    margin-bottom: 2em;
     border: none;
     outline: none;
     padding: 12px 1px 12px 4px;
@@ -107,6 +108,7 @@ input[type="submit"] {
   }
   
 .btn.active {
+    // font-weight: 500;
     background-color: rgb(255, 255, 255);
     color: $color-links;
     border-radius: 0;
