@@ -155,7 +155,7 @@ footer .menu {
 
 /* ABOUT */
 
-.about .hero-head {
+.hero-head {
     margin-top: 2em;
     font-size: 2.8em;
 }
@@ -197,7 +197,19 @@ footer .menu {
     width: 389px;
 }
 
+.product .main-head {
+    font-size: 1.625em;
+    text-align: left;
+    line-height: 1.4em;
+    color: $color-links;
+    margin-bottom: .5em;
+}
 
+.product .paragraph {
+    margin: 0;
+    text-align: left;
+    max-width: 30em;
+}
 
 
 
