@@ -229,11 +229,18 @@ footer .menu {
   font-size: 75%;
   text-align: left;
   letter-spacing: .25em;
-  margin-top: 1.7em;
+  margin-top: 1.9em;
   margin-bottom: 0; }
 
 .contact .info {
-  margin: 0; }
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #858382;
+  font-weight: 300;
+  letter-spacing: .01em;
+  text-decoration: none; }
+  .contact .info:hover {
+    color: #CE1F0A; }
 
 button {
   font-size: inherit; }
@@ -875,6 +882,11 @@ form {
 
 .contact .column {
   text-align: left; }
+
+.contact .row {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
 
 .contact .site-footer {
   margin-top: 0; }
