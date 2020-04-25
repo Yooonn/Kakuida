@@ -238,7 +238,7 @@ section {
     background-image: url(../../img/bg-paper01@2x-min.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 788px;
+    // min-height: auto;
 }
 
 .process {
@@ -253,10 +253,97 @@ section {
     background-image: url(../../img/bg-blackvinegar01@2x-min.png);
     background-size: cover;
     background-position: center;
-    min-height: 788px;
+    min-height: 573px;
 }
 
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    // background: #f1f1f1f1;
+  }
 
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 2em;
+    text-align: center;
+}
+
+.slide-card {
+    display:inline-block;
+    width: 19.5em;
+    height: 16.5em;
+    background: rgba(0, 0, 0, 0.523);
+    padding: 2.5em;
+    margin: 1em;
+}
+
+.star-rate {
+    width: 102px;
+    margin: .4em;
+}
+
+.comment {
+    color: white;
+    margin: .5em;
+}
+
+.author {
+    color: rgb(155, 155, 155);
+    font-family: $heading-fontfamily;
+    font-size: .875em;
+    margin: .7em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    margin-right: 3em;
+    margin-left: 3em;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 .3em;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color: #717171;
+}
+
+.active, .dot:hover {
+    background-color: #aeaeae;
+}
 
 /* HOME - DON'T MISS OUT */
 
