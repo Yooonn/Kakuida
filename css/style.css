@@ -608,7 +608,7 @@ section {
 /* HOME - TOP SELLING VINEGARS */
 .topselling {
   background-image: url(../img/bg-pattern01@2x-min.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center; }
 
 .topselling-card .container {
