@@ -200,12 +200,13 @@ section {
 
 .topselling-card .container {
     background-color: rgb(255, 255, 255);
-    max-width: 85%;
+    max-width: 66em;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 80px 120px -60px rgba(63,63,31,0.3);
-    padding: 76px;
+    padding: 4.7em 3em 2.3em 3em;
     margin-top: -12%;
+    
     position: relative;
     z-index: 1;
 } 
@@ -215,6 +216,10 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
     // background-color: pink;
+}
+
+.topselling .row {
+    padding: 0 3em;
 }
 
 .product-item {
@@ -396,29 +401,35 @@ form {
 
 .site-footer {
     background-image: url(../../img/bg-black-pattern@2x-min.jpg);
-    background-size: cover;
-    height: 18em;
+    background-size: contain;
+    // height: 18em;
     margin-top: 4em;
     display: block;
 }
 
 .footer {
     padding: 0;
+    margin-top: 3em;
+    background-color: black;
 }
 
-.col {
-    width:20%;
-    height: auto;
-    float: left;
+footer .one-fifth.column {
     padding-top: 0;
-    padding-left: 1em;
+    padding-left: 2em;
+    // background-color: pink; 
 }
 
-.col ul {
+footer .row {
+    display: flex;
+    align-items: flex-start;
+}
+
+footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: left;
+    color: $color-accent;
 }
 
 .text {

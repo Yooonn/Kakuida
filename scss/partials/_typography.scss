@@ -146,10 +146,11 @@ footer .menu {
 
 .copyright-text {
     font-size: .7em;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     color: $color-accent;
-    text-transform: uppercase;
-    padding-top: 17em;
+    opacity: 80%;
+    margin-bottom: 0;
+    // text-transform: uppercase;
     max-width: 1050px;
 }
 
