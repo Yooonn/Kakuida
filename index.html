@@ -15,8 +15,9 @@
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- SWIPER -->
+  <!-- SWIPER CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
   <!-- MAIN CSS FILE -->
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -275,14 +276,11 @@
   <!-- FOOTER 2 -->
 
   <footer class="site-footer">
-    <div class="container footer">
+    <div class="container">
 
       <div class="row">
-        <div class="column">
+        <div class="one-fifth column">
           <a href="index.html"><img class="footer-logo" src="img/Kakuida_logo-min.png" alt="Kakuida-logo"></a>
-        </div>
-        <div class="column">
-          <a href=""><img src="img/Available-on-amazon@2x-min.png" class="amazon-logo" alt="amazon link"></a>
         </div>
         <div class="column text">
           <ul class="menu">
@@ -298,6 +296,9 @@
             <li>310-570-3960</li>
             <li>Info@essan.com</li>
           </ul>
+        </div>
+        <div class="column">
+          <a href=""><img src="img/Available-on-amazon@2x-min.png" class="amazon-logo" alt="amazon link"></a>
         </div>
         <div class="column social">
           <ul>
@@ -329,7 +330,6 @@
   <script>
     var mySwiper = new Swiper('.swiper-container', {
       // Optional parameters
-      // direction: 'vertical',
       loop: true,
 
       // If we need pagination
