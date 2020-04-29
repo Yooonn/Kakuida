@@ -4,15 +4,15 @@ const mysitenav = document.querySelector('.site-header .site-nav');
 const mymenubutton = document.querySelector('.menu-button');
 
 mymenubutton.onclick = function () {
-    mysitenav.classList.toggle('active');
+  mysitenav.classList.toggle('active');
 }
 
 // REMOVE ACTIVE WHEN USER CLICK ON OVERLAY NAV LINKS
 cont = mysitenavlinks = document.querySelectorAll('.site-header .site-nav a');
 for (var i = 0, len = mysitenavlinks.length; i < len; i++) {
-    mysitenavlinks[i].onclick = function () {
-        mysitenav.classList.remove('active');
-    };
+  mysitenavlinks[i].onclick = function () {
+    mysitenav.classList.remove('active');
+  };
 };
 
 
@@ -56,43 +56,19 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
+// wrap in a conditional because this is only needed on pages with myBtnContainer
 var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-
-
-
-// Testimonial carousel
-var slideIndex = 1;
-showSlides(slideIndex);
-    
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-    
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-    
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+if (btnContainer !== null) {
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
 }
+
+
+
+

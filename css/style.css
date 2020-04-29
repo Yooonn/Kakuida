@@ -686,7 +686,7 @@ section {
 
 /* HOME - WHAT IS BLACK VINEGAR? */
 .blackvinegar {
-  background-image: url(../../img/bg-paper01@2x-min.jpg);
+  background-image: url(../img/bg-paper01@2x-min.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -697,18 +697,24 @@ section {
 
 /* HOME - OUR CUSTOMERS SAY */
 .testimonial {
-  background-image: url(../../img/bg-blackvinegar01@2x-min.png);
+  background-image: url(../img/bg-blackvinegar01@2x-min.png);
   background-size: cover;
   background-position: center;
   min-height: 573px; }
 
 /* Slideshow container */
+:root {
+  --swiper-theme-color: #BA8C60; }
+
+.swiper-container {
+  width: 100%;
+  min-height: 300px; }
+
 .slideshow-container {
   position: relative; }
 
 /* Slides */
 .mySlides {
-  display: none;
   padding: 2em;
   text-align: center; }
 
@@ -785,7 +791,7 @@ section {
 
 /* HOME - DON'T MISS OUT */
 .signup {
-  background-image: url(../../img/bg-kagoshima@2x-min.jpg);
+  background-image: url(../img/bg-kagoshima@2x-min.jpg);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat; }
@@ -815,47 +821,63 @@ form {
 
 /* HOME - FIND US ON AMAZON */
 .amazon {
-  background-image: url(../../img/Blackvinegar-products@2x-min.jpg);
+  background-image: url(../img/Blackvinegar-products@2x-min.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 40em; }
 
-.amazon-logo {
-  max-width: 45px;
-  height: auto;
-  margin-bottom: 1.4em; }
-
 /* FOOTER */
 .site-footer {
-  background-image: url(../../img/bg-black-pattern@2x-min.jpg);
+  background-image: url(../img/bg-black-pattern@2x-min.jpg);
   background-size: contain;
   margin-top: 4em;
   display: block; }
-
-.footer {
-  padding: 0;
-  margin-top: 3em;
-  background-color: black; }
-
-footer .one-fifth.column {
-  padding-top: 0;
-  padding-left: 2em; }
-
-footer .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
-
-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  color: #BA8C60; }
+  .site-footer .container {
+    padding: 0;
+    margin-top: 3em;
+    background-color: black; }
+  .site-footer .row {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .site-footer .column {
+    padding: 2em; }
+  .site-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #BA8C60; }
+  .site-footer img {
+    max-width: 150px; }
+  @media (min-width: 768px) {
+    .site-footer .column {
+      min-width: 10%;
+      max-width: 20%; }
+    .site-footer .one-whole.column {
+      min-width: none;
+      max-width: none; }
+    .site-footer .column:nth-child(1) {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3; }
+    .site-footer .column:nth-child(2) {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; }
+    .site-footer .column:nth-child(3) {
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+      order: 4; }
+    .site-footer .column:nth-child(4) {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+    .site-footer .column:nth-child(5) {
+      -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+      order: 5; } }
 
 .text {
   padding-left: 3em; }
@@ -871,7 +893,7 @@ footer ul {
 
 /* ABOUT */
 .about .history {
-  background-image: url(../../img/bg-paper01@2x-min.jpg);
+  background-image: url(../img/bg-paper01@2x-min.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -958,7 +980,7 @@ footer ul {
 
 /* PRODUCT */
 .product .history {
-  background-image: url(../../img/bg-paper01@2x-min.jpg);
+  background-image: url(../img/bg-paper01@2x-min.jpg);
   background-size: cover;
   background-position: center; }
 

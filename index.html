@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="utf-8" />
   <title>Kakuida Premium Black vinegar</title>
@@ -13,7 +13,10 @@
   <link rel="stylesheet" href="https://use.typekit.net/fwl2lrn.css">
 
   <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
   <!-- MAIN CSS FILE -->
   <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -22,18 +25,18 @@
 <body>
 
   <header class="site-header toggle-nav">
-        <nav class="site-nav">
-          <div class="site-identity">
-            <a href="index.html"><img class="logo" src="img/Kakuida_logo-min.png" alt="Kakuida-logo"></a>
-          </div>
-          <div class="menu-button navicon">Menu</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="site-nav">
+      <div class="site-identity">
+        <a href="index.html"><img class="logo" src="img/Kakuida_logo-min.png" alt="Kakuida-logo"></a>
+      </div>
+      <div class="menu-button navicon">Menu</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="hero">
@@ -96,7 +99,10 @@
         <h2>Black Vinegar?</h2>
       </div>
       <div class="container">
-        <p>Kakuida Black Vinegar is proud to own the oldest high-quality vinegar starter through which the company has improved the quality and natural fermentation process of Black Vinegar. Combined with high-quality vinegar starter, clear water, and traditional earthenware pot, artisan’s spirit of reviving the tradition of Japan Black Vinegar brews naturally fermented Black Vinegar aged for more than three years.</p>
+        <p>Kakuida Black Vinegar is proud to own the oldest high-quality vinegar starter through which the company has
+          improved the quality and natural fermentation process of Black Vinegar. Combined with high-quality vinegar
+          starter, clear water, and traditional earthenware pot, artisan’s spirit of reviving the tradition of Japan
+          Black Vinegar brews naturally fermented Black Vinegar aged for more than three years.</p>
         <a href="about.html" class="underline-link">Learn more</a>
       </div>
       <img class="process" src="img/blackvinegar-making-process@2x-min.png" alt="a process of making black vinegar">
@@ -107,73 +113,81 @@
     <div class="section-header">
       <h2 class="h2-italic">Our customers say</h2>
     </div>
-    
-    <div class="slideshow-container">
-    
-      <div class="mySlides">
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ This vinegar is awesome. It really is the perfect health tonic to keep around. “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ This vinegar is awesome. It really is the perfect health tonic to keep around. “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ This vinegar is awesome. It really is the perfect health tonic to keep around. “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-      </div>
-      
-      <div class="mySlides">
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ a “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ b “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ c “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-      </div>
-      
-      <div class="mySlides">
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ d “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ e “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-        <div class="slide-card">
-          <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
-          <p class="comment">“ f “</p>
-          <p class="author"><i>- Michael H.</i></p>
-        </div>
-      </div>
 
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-    
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="mySlides">
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ This vinegar is awesome. It really is the perfect health tonic to keep around. “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ This vinegar is awesome. It really is the perfect health tonic to keep around. “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ This vinegar is awesome. It really is the perfect health tonic to keep around. “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mySlides">
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ a “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ b “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ c “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mySlides">
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ d “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ e “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+            <div class="slide-card">
+              <img class="star-rate" src="img/5star@2x-min.png" alt="rated five star">
+              <p class="comment">“ f “</p>
+              <p class="author"><i>- Michael H.</i></p>
+            </div>
+          </div>
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
     </div>
-    
-    <div class="dot-container">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
+
+
 
   </section>
 
@@ -255,115 +269,83 @@
 
 
 
-<!-- FOOTER 1 -->
+  <!-- FOOTER 1 -->
+
+
+
+  <!-- FOOTER 2 -->
 
   <footer class="site-footer">
-    <div class="container footer">
-
-      <nav class="site-nav">
-        <div class="site-identity">
-          <a href="index.html"><img class="logo" src="img/Kakuida_logo-min.png" alt="Kakuida-logo"></a>
-        </div>
-      </nav>
+    <div class="container">
 
       <div class="row">
-      <div class="one-fifth column">
-        <a href=""><img class="#" src="img/Available-on-amazon@2x-min.png" alt="amazon link"></a>
-      </div>
-      <div class="one-fifth column text">
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="one-fifth column">
-        
-      </div>
-      <div class="one-fifth column text">
-        <ul>
-          <li>2370 W. Carson st. #130 Torrance, CA 90501</li>
-          <li>310-570-3960</li>
-          <li>Info@essan.com</li>
-        </ul>
-      </div>
-      <div class="one-fifth column social">
-        <ul>
-          <li><a href="#"><img src="img/Icon-youtube@2x-min.png" width="20" ></a></li>
-          <li><a href="#"><img src="img/Icon-amazon@2x-min.png" width="19.8" ></a></li>
-        </ul>
-        <ul>
-          <li><a href="#"><img src="img/Icon-instagram@2x-min.png" width="20" ></a></li>
-          <li><a href="#"><img src="img/Icon-facebook@2x-min.png" width="11" ></a></li>
-        </ul>
+        <div class="one-fifth column">
+          <a href="index.html"><img class="footer-logo" src="img/Kakuida_logo-min.png" alt="Kakuida-logo"></a>
+        </div>
+        <div class="column text">
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="column text">
+          <ul>
+            <li>2370 W. Carson st. #130 Torrance, CA 90501</li>
+            <li>310-570-3960</li>
+            <li>Info@essan.com</li>
+          </ul>
+        </div>
+        <div class="column">
+          <a href=""><img src="img/Available-on-amazon@2x-min.png" class="amazon-logo" alt="amazon link"></a>
+        </div>
+        <div class="column social">
+          <ul>
+            <li><a href="#"><img src="img/Icon-youtube@2x-min.png" width="20px"></a></li>
+            <li><a href="#"><img src="img/Icon-amazon@2x-min.png" width="19.8px"></a></li>
+            <li><a href="#"><img src="img/Icon-instagram@2x-min.png" width="20px"></a></li>
+            <li><a href="#"><img src="img/Icon-facebook@2x-min.png" width="11px"></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    </div>
-    <div class="container">
-        <p class="copyright-text">Kakuida black vinegar is distributed by Essan inc. | Copyright©2020 essan Inc.</p>
+    <div class="row">
+      <div class="container">
+        <div class="one-whole column">
+          <p class="copyright-text">Kakuida black vinegar is distributed by Essan inc. | Copyright©2020 essan Inc.</p>
+        </div>
+      </div>
     </div>
   </footer>
 
 
-  
-<!-- FOOTER 2 -->
-
-<footer class="site-footer">
-  <div class="container footer">
-
-    <div class="row">
-      <div class="one-fifth column">
-        <a href=""><img class="#" src="img/Available-on-amazon@2x-min.png" alt="amazon link"></a>
-      </div>
-      <div class="one-fifth column text">
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="one-fifth column">
-        <div class="site-identity">
-          <a href="index.html"><img class="logo" src="img/Kakuida_logo-min.png" alt="Kakuida-logo"></a>
-        </div>
-      </div>
-      <div class="one-fifth column text">
-        <ul>
-          <li>2370 W. Carson st. #130 Torrance, CA 90501</li>
-          <li>310-570-3960</li>
-          <li>Info@essan.com</li>
-        </ul>
-      </div>
-      <div class="one-fifth column social">
-        <ul>
-          <li><a href="#"><img src="img/Icon-youtube@2x-min.png" width="20" ></a></li>
-          <li><a href="#"><img src="img/Icon-amazon@2x-min.png" width="19.8" ></a></li>
-        </ul>
-        <ul>
-          <li><a href="#"><img src="img/Icon-instagram@2x-min.png" width="20" ></a></li>
-          <li><a href="#"><img src="img/Icon-facebook@2x-min.png" width="11" ></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container">
-    <div class="one-whole column">
-        <p class="copyright-text">Kakuida black vinegar is distributed by Essan inc. | Copyright©2020 essan Inc.</p>
-    </div>
-    </div>
-  </div>
-</footer>
 
 
 
 
+  <!-- SWIPER JS -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
 
-
-
+    })
+  </script>
 
   <!-- SMOOTH SCROLL -->
   <script src="js/smooth-scroll.polyfills.min.js"></script>
@@ -386,4 +368,3 @@
 </body>
 
 </html>
-

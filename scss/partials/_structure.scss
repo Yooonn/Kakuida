@@ -238,7 +238,7 @@ section {
 /* HOME - WHAT IS BLACK VINEGAR? */
 
 .blackvinegar {
-    background-image: url(../../img/bg-paper01@2x-min.jpg);
+    background-image: url(../img/bg-paper01@2x-min.jpg);
     background-size: cover;
     background-position: center;
     // min-height: auto;
@@ -253,13 +253,23 @@ section {
 /* HOME - OUR CUSTOMERS SAY */
 
 .testimonial {
-    background-image: url(../../img/bg-blackvinegar01@2x-min.png);
+    background-image: url(../img/bg-blackvinegar01@2x-min.png);
     background-size: cover;
     background-position: center;
     min-height: 573px;
 }
 
 /* Slideshow container */
+
+:root {
+    --swiper-theme-color: #BA8C60;
+}
+
+.swiper-container {
+    width: 100%;
+    min-height: 300px;
+}
+
 .slideshow-container {
     position: relative;
     // background: #f1f1f1f1;
@@ -267,7 +277,7 @@ section {
 
 /* Slides */
 .mySlides {
-    display: none;
+    // display: none;
     padding: 2em;
     text-align: center;
 }
@@ -351,7 +361,7 @@ section {
 /* HOME - DON'T MISS OUT */
 
 .signup {
-    background-image: url(../../img/bg-kagoshima@2x-min.jpg);
+    background-image: url(../img/bg-kagoshima@2x-min.jpg);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -384,52 +394,70 @@ form {
 /* HOME - FIND US ON AMAZON */
 
 .amazon {
-    background-image: url(../../img/Blackvinegar-products@2x-min.jpg);
+    background-image: url(../img/Blackvinegar-products@2x-min.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom center;
     height: 40em;
 }
 
-.amazon-logo {
-    max-width: 45px;
-    height: auto;
-    margin-bottom: 1.4em;
-}
+
 
 /* FOOTER */
 
 .site-footer {
-    background-image: url(../../img/bg-black-pattern@2x-min.jpg);
+    background-image: url(../img/bg-black-pattern@2x-min.jpg);
     background-size: contain;
     // height: 18em;
     margin-top: 4em;
     display: block;
-}
 
-.footer {
-    padding: 0;
-    margin-top: 3em;
-    background-color: black;
-}
+    .container {
+        padding: 0;
+        margin-top: 3em;
+        background-color: black;
+    }
 
-footer .one-fifth.column {
-    padding-top: 0;
-    padding-left: 2em;
-    // background-color: pink; 
-}
+    .row {
+        // display: flex;
+        align-items: flex-start;
+    }
 
-footer .row {
-    display: flex;
-    align-items: flex-start;
-}
+    .column {
+        padding: 2em;
+    }
 
-footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    color: $color-accent;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        color: $color-accent;
+    }
+
+    img {
+        max-width: 150px;
+    }
+
+    @media (min-width: 768px) {
+
+        .column {
+            min-width: 10%;
+            max-width: 20%;
+        }
+
+        .one-whole.column {
+            min-width: none;
+            max-width: none;
+        }
+
+        .column:nth-child(1) { order: 3;}
+        .column:nth-child(2) { order: 2;}
+        .column:nth-child(3) { order: 4;}
+        .column:nth-child(4) { order: 1;}
+        .column:nth-child(5) { order: 5;}
+    }
+
 }
 
 .text {
@@ -453,7 +481,7 @@ footer ul {
 /* ABOUT */
 
 .about .history {
-    background-image: url(../../img/bg-paper01@2x-min.jpg);
+    background-image: url(../img/bg-paper01@2x-min.jpg);
     background-size: cover;
     background-position: center;
     // min-height: 788px;
@@ -569,7 +597,7 @@ footer ul {
 /* PRODUCT */
 
 .product .history {
-    background-image: url(../../img/bg-paper01@2x-min.jpg);
+    background-image: url(../img/bg-paper01@2x-min.jpg);
     background-size: cover;
     background-position: center;
     // min-height: 788px;
