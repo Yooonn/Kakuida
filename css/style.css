@@ -644,7 +644,7 @@ section {
 
 /* HOME - TOP SELLING VINEGARS */
 .topselling {
-  background-image: url(/img/bg-pattern01@2x-min.jpg);
+  background-image: url(../img/bg-pattern01@2x-min.jpg);
   background-size: contain;
   background-position: center; }
 
@@ -898,7 +898,7 @@ form {
   background-position: center; }
 
 .about .hero {
-  background-image: url(/img/kakuida-blackvinegar-hero-bg01.jpg);
+  background-image: url(../img/kakuida-blackvinegar-hero-bg01.jpg);
   background-size: contain;
   background-position: top center;
   max-width: 100%;
@@ -1011,7 +1011,7 @@ form {
 
 /* CONTACT */
 .contact .hero {
-  background-image: url(/img/kakuida-blackvinegar-hero-bg03.jpg);
+  background-image: url(../img/kakuida-blackvinegar-hero-bg03.jpg);
   background-size: contain;
   background-position: top center;
   max-width: 100%;
@@ -1019,7 +1019,7 @@ form {
   background-repeat: no-repeat; }
 
 .contact-area {
-  background-image: url(/img/bg-kagoshima-large@2x-min.jpg);
+  background-image: url(../img/bg-kagoshima-large@2x-min.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
