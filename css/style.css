@@ -644,7 +644,7 @@ section {
 
 /* HOME - TOP SELLING VINEGARS */
 .topselling {
-  background-image: url(../img/bg-pattern01@2x-min.jpg);
+  background-image: url(/img/bg-pattern01@2x-min.jpg);
   background-size: contain;
   background-position: center; }
 
