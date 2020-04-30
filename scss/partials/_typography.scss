@@ -137,6 +137,12 @@ footer .col ul li {
 
 footer .menu {
     text-transform: uppercase;
+    letter-spacing: .14em;
+    line-height: 2.4em;
+}
+
+footer .info {
+    line-height: 1.5em;
 }
 
 // footer .menu li :hover {
@@ -149,6 +155,7 @@ footer .menu {
     letter-spacing: .1em;
     color: $color-accent;
     opacity: 80%;
+    margin-top: 0;
     margin-bottom: 0;
     // text-transform: uppercase;
     max-width: 1050px;

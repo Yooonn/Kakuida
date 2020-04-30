@@ -401,21 +401,27 @@ form {
     height: 40em;
 }
 
-
+.amazon-logo {
+    max-width: 45px;
+    height: auto;
+    margin-bottom: 1.4em;
+}
 
 /* FOOTER */
 
 .site-footer {
     background-image: url(../img/bg-black-pattern@2x-min.jpg);
     background-size: contain;
-    // height: 18em;
     margin-top: 4em;
     display: block;
+    font-size: 90%;
 
     .container {
         padding: 0;
         margin-top: 3em;
-        background-color: black;
+        max-width: 1200px;
+        // margin-left: 1em;
+        // margin-right: 1em;
     }
 
     .row {
@@ -424,12 +430,31 @@ form {
     }
 
     .column {
-        padding: 2em;
+        padding: 0;
+        padding-left: 4.6em;
+    }
+
+    .info {
+        padding-left: 0;
+        margin-left: 4.6em;
+        margin-right: 0;
+        line-height: 2.2em;
+        // background-color: red;
+    }
+
+    .social {
+        // margin-left: 0;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .one-whole.column {
+        padding-left: 0;
     }
 
     ul {
         list-style: none;
-        margin: 0;
+        margin-top: 0;
         padding: 0;
         text-align: left;
         color: $color-accent;
@@ -460,18 +485,23 @@ form {
 
 }
 
-.text {
-    padding-left: 3em;
+.footer-logo {
+    width: 6.5em;
 }
 
+// .text {
+//     background-color: rgb(69, 69, 69);
+// }
+
 .social {
-    padding-left: 4.5em;
+    // padding-left: 4em;
     padding-top: .4em;
 }
 
 .social ul li {
     display: inline-block;
-    padding-right: 30px;
+    padding-left: 30px;
+    // padding-right: 30px;
     // padding-bottom: 20px;
     margin-bottom: 20px;
 
