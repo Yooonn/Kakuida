@@ -24,11 +24,17 @@ body {
     text-align: center;
 }
 
+
+// @media (max-width: 767px) {
+//     body {
+//         font-size: 110%; // 16px
+//     }
+// }
+
 @media (min-width: $breakpoint-small) {
     body {
         font-size: 100%; // 16px
     }
-
 }
 
 @media (min-width: $breakpoint-medium) {
