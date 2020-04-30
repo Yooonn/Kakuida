@@ -178,7 +178,7 @@ section {
     background-color: $color-hero-bg;
     padding: 6em 1em;
     color: #fff;
-    background-image: url(/img/Kakuida@2x-min.jpg);
+    background-image: url(../img/Kakuida@2x-min.jpg);
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -596,15 +596,8 @@ form {
 
 /* PRODUCT */
 
-.product .history {
-    background-image: url(../img/bg-paper01@2x-min.jpg);
-    background-size: cover;
-    background-position: center;
-    // min-height: 788px;
-}
-
 .product .hero {
-    background-image: url(/img/kakuida-blackvinegar-hero-bg02.jpg);
+    background-image: url(../img/kakuida-blackvinegar-hero-bg02.jpg);
     background-size: contain;
     background-position: top center;
     max-width: 100%;
@@ -614,7 +607,7 @@ form {
 }
 
 .product .recommend {
-    background-image: url(/img/bg-kakuida-drink-recommend@2x-min.jpg);
+    background-image: url(../img/bg-kakuida-drink-recommend@2x-min.jpg);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -623,7 +616,7 @@ form {
 }
 
 .product .call-to-action-1 {
-    background-image: url(/img/bg-Kakuida-CallToAction@2x-min.jpg);
+    background-image: url(../img/bg-Kakuida-CallToAction@2x-min.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
