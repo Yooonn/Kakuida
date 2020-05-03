@@ -66,6 +66,7 @@ a:hover {color:$color-links-dark;}
 
 .hero-mainhead {
     font-size: 3.4375em;
+    color: white;
     text-transform: uppercase;
     font-style: normal;
     line-height: 1em;
@@ -173,7 +174,7 @@ footer .info {
     font-style: italic;
     letter-spacing: 0;
     line-height: 1.4em;
-    width: 653px;
+    max-width: 653px;
     margin: .8em auto;
     padding-top: .9em;
 }

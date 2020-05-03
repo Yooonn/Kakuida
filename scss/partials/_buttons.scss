@@ -2,6 +2,7 @@
 
 button {
     font-size: inherit;
+    outline:none;
 }
 
 button,
@@ -39,6 +40,15 @@ button,
             border-color: $color-links;
         }
     }
+    
+    @media (min-width:768px) {
+
+        &.ShopNow {
+            font-size: 70%;
+            padding: .9em 1.8em;
+            margin-top: .9em;
+        }
+    }
 }
 
 input[type="submit"] {
@@ -58,6 +68,7 @@ input[type="submit"] {
     cursor: pointer;
     text-decoration: none;
     transition: all.2s ease;
+    outline:none;
 
     &:hover {
         color: #fff;

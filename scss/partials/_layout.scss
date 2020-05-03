@@ -11,7 +11,7 @@ html, body { height: 100%; }
 
 
 body {
-    font-size: 87.5%; // 14px
+    // font-size: 87.5%; // 14px
     margin: 0;
 
 }
@@ -24,12 +24,6 @@ body {
     text-align: center;
 }
 
-
-// @media (max-width: 767px) {
-//     body {
-//         font-size: 110%; // 16px
-//     }
-// }
 
 @media (min-width: $breakpoint-small) {
     body {
@@ -56,41 +50,46 @@ body {
 /* PRODUCT FILTER LISTS */
 
 .container.list {
-    overflow: hidden;
+    // overflow: hidden;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     // border: 1px solid blue;
   }
   
-  .filterDiv {
-    float: left;
+.filterDiv {
+    // float: left;
     display: none; /* Hidden by default */
-    margin: 1.445em;
+    margin-top: 2em;
+    width: 49.5%;
     // border: 1px solid pink;
-  }
+
+    @media (max-width:767px) {
+        margin: 0 auto;
+    }
+
+    @media (min-width:768px) {
+        width: 24.5%;  
+        margin-left: .25em;
+    }
+
+}
+
+
   
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
-  
-
-
-
-
+/* The "show" class is added to the filtered elements */
+.show {
+display: block;
+// border: 1px solid rgb(0, 38, 255);
+// background-color: blue;
+}
   
 /* GRID */
 /* Default Grid (on SMALL+ Screen Sizes) */
 
-
-
-
 .row .column {
     margin-bottom: 2%;
-}
-
-
-.row .column .one-half {
-
 }
 
 /* Medium Grid (on MEDIUM+ Screen Sizes) */
