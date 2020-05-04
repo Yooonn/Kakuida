@@ -435,12 +435,9 @@ form {
 
 .input {
 
-    
+
     display: flex;
     justify-content: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 .inputbox {
@@ -453,6 +450,9 @@ form {
     margin-left: 1em;
     min-width: 20em;
     outline:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 /* HOME - FIND US ON AMAZON */
