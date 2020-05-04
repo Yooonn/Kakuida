@@ -434,8 +434,6 @@ form {
 }
 
 .input {
-
-
     display: flex;
     justify-content: center;
 }
@@ -450,9 +448,6 @@ form {
     margin-left: 1em;
     min-width: 20em;
     outline:none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 /* HOME - FIND US ON AMAZON */
@@ -876,9 +871,6 @@ form {
     input[type=text], textarea {
         padding: 1em;
         margin-bottom: 1.2em;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
     }
 
     textarea {

@@ -69,15 +69,21 @@ input[type="submit"] {
     text-decoration: none;
     transition: all.2s ease;
     outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 
     &:hover {
         color: #fff;
         background-color: $color-links-dark;
         border-color: $color-links-dark;
     }
+}
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+-webkit-appearance: none;
+border-radius: 0;
 }
 
 .underline-link {
