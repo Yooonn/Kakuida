@@ -873,6 +873,9 @@ form {
     input[type=text], textarea {
         padding: 1em;
         margin-bottom: 1.2em;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
 
     textarea {
