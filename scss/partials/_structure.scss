@@ -434,10 +434,13 @@ form {
 }
 
 .input {
+
     
-    // margin: 0 auto;
     display: flex;
     justify-content: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .inputbox {
