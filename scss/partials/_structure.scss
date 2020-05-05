@@ -11,6 +11,9 @@
         font-family: $body-fontfamily;
         font-size: 1.5em;
         margin: .5em 0 0 0; //to adjust baseline 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
     }
 
     a {
@@ -24,7 +27,7 @@
     background-color: transparent;
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 // site footer
@@ -38,73 +41,141 @@
 .site-nav {
     margin-bottom:50px;
     text-align: center;
-    width:660px;
+    width: 660px;
     margin: 1em auto;
     position:relative;
     // border: 1px solid yellow;
+
+
+    @media (max-width: 768px) {
+
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        background: rgba(0, 0, 0, 1);
+    
+        ul {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        z-index: 1;
+        }
+    
+        li {
+        font-size: 2.4em;
+        line-height: 2em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        opacity: 0;
+        text-align: center;
+        }
+
+        a {
+        display: block;
+        padding: 0 1em;
+        margin: 0 0.5em;
+        &:hover {
+        color: rgba(255,255,255,1);
+        transition: all .4s ease;
+        }
+        }
+
+        &.active {
+            height: 100%;
+            position: fixed;
+            z-index: 100;
+                
+            ul { top: 50%; }
+            
+            li {
+            transform: translateY(-20px);
+            opacity: 1;
+            transition: all .6s cubic-bezier(0,1,1,1) .8s; // slow end with delay
+
+            &:nth-child(1) { transition-delay: .2s; }
+            &:nth-child(2) { transition-delay: .3s; }
+            &:nth-child(3) { transition-delay: .4s; }
+            &:nth-child(4) { transition-delay: .5s; }
+            }
+        }
+
+    }
+  
 }
 
-.site-nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    // grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    list-style: none;
-}
 
-.site-nav ul li {
-    min-width: 23%;
-    margin: 0 1%;
-    // background-color: yellow;
 
-    &:nth-child(2) {
-        margin-right: 180px; /* nav menu gap */
+@media (min-width: 768px) {
+
+    .site-nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        list-style: none;
     }
 
+    .site-nav ul li {
+        min-width: 23%;
+        margin: 0 1%;
+        // background-color: yellow;
 
-    &.temp {
-        width: 103px;
+        &:nth-child(2) {
+            margin-right: 180px; /* nav menu gap */
+        }
+
+        &.temp {
+            width: 103px;
+        }
+    }
+
+    .site-nav ul li a {
+        display: block;
+        padding: 1em 1.5em;
+        transition: all .4s ease;
+
+        font-family: $body-fontfamily;
+        font-weight: 400;
+        font-size: 0.875em;
+        color: $color-accent;
+        text-transform: uppercase;
+        letter-spacing: .2em;
     }
 }
 
-.site-nav ul li a {
-    display: block;
-    padding: 1em 1.5em;
-    transition: all .4s ease;
-
-    font-family: $body-fontfamily;
-    font-weight: 400;
-    font-size: 0.875em;
-    color: $color-accent;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-}
-
-@media (max-width:767px) {
-    .site-nav ul li a:hover {
-        background: pink;
-        color: #fff;
-    }
-}
 
 .logo {
     max-width: 103px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    // background-color: green;
+    z-index: 4;
+
+    @media (max-width: 767px) {
+        margin-top: 1.2em;
+    }
 }
 
 /* MENU BUITTON */
 
 .menu-button {
     position: absolute;
-    top: 1.5em;
-    right: 4%;
+    top: 1.8em;
+    right: 7%;
     display: flex;
-    /* float: right; */
 }
+
+    .site-header:not(.toggle-nav) .menu-button {
+        top: -9999px;
+        left: -9999px;
+    }
 
 @media (min-width: 768px) {
     .menu-button {
@@ -122,16 +193,18 @@
 }
 
 .navicon::selection {
-    background: rgba(255,255,255,0);
+    color: rgba(255,255,255,0);
 }
 
 .navicon::after {
     cursor: pointer;
     content: "\2630";
-    font-size: 1.5em;
-    color: rgb(255, 255, 255);
+    font-size: 2em;
+    color: $color-accent;
     display: block;
     margin-left: .5em;
+    transform: rotate(0);
+    // transition: .2s all ease-out;
 }
 
 .expanded .navicon::after {
@@ -140,27 +213,11 @@
     transition: all .4s ease-out;
 }
 
-/* TOGGLE NAV */
 
-@media (max-width: 768px) {
 
-    .site-header.toggle-nav {
-        text-align: left;
-    }
 
-    .toggle-nav .site-nav ul li {
-        display: block;
-        text-align: center;
-    }
 
-    .toggle-nav .site-nav ul {
-        display: none;
-    }
 
-    .toggle-nav .site-nav.expanded ul {
-        display: block;
-    }
-}
 
 section {
     padding: 6em 0;
@@ -322,7 +379,7 @@ section {
 /* Slideshow container */
 
 :root {
-    --swiper-theme-color: #BA8C60;
+    --swiper-theme-color: #888;
 }
 
 .swiper-container {
@@ -366,56 +423,6 @@ section {
     font-family: $heading-fontfamily;
     font-size: .875em;
     margin: .7em;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    margin-right: 3em;
-    margin-left: 3em;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-}
-
-/* The dots/bullets/indicators */
-.dot-container {
-    text-align: center;
-    padding: 10px;
-}
-
-.dot {
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 0 .3em;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    background-color: #717171;
-}
-
-.active, .dot:hover {
-    background-color: #aeaeae;
 }
 
 /* HOME - DON'T MISS OUT */
