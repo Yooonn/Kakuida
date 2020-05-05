@@ -318,6 +318,14 @@ input[type="submit"] {
     background-color: #b31503;
     border-color: #b31503; }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
 .underline-link {
   font-size: .8em;
   letter-spacing: .3em;
