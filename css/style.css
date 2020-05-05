@@ -670,8 +670,8 @@ body {
 /* MENU BUITTON */
 .menu-button {
   position: absolute;
-  top: 1.8em;
-  right: 7%;
+  top: 2.1em;
+  right: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }

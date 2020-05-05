@@ -15,18 +15,6 @@ for (var i = 0, len = mysitenavlinks.length; i < len; i++) {
   };
 };
 
-
-
-// --------------------------------
-// var mymenubutton = document.querySelector('.menu-button');
-// var mysitenav = document.querySelector('.site-nav');
-
-// mymenubutton.onclick = function() {
-//   mysitenav.classList.toggle("active");
-// };
-
-
-// --------------------------------
 // TOGGLE NAV
 
 document.addEventListener('DOMContentLoaded', function () {
