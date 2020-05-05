@@ -47,7 +47,7 @@
     // border: 1px solid yellow;
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
 
         position: absolute;
         width: 100%;
@@ -393,6 +393,16 @@ section {
   }
 
 /* Slides */
+
+
+
+@media (max-width: 767px) {
+    .slide-card {
+        &:nth-child(1) { display: none };
+        &:nth-child(2) { display: none };
+    }
+}
+
 .mySlides {
     // display: none;
     padding: 2em;
@@ -423,6 +433,7 @@ section {
     font-family: $heading-fontfamily;
     font-size: .875em;
     margin: .7em;
+    margin-top: 1.3em;
 }
 
 /* HOME - DON'T MISS OUT */
@@ -591,7 +602,7 @@ form {
     min-height: 60vh;
     background-repeat: no-repeat;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
 
         min-height: 23em;
         background-size: cover;
@@ -710,7 +721,7 @@ form {
     min-height: 60vh;
     background-repeat: no-repeat;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
 
         min-height: 23em;
         background-size: cover;
@@ -828,7 +839,7 @@ form {
     min-height: 60vh;
     background-repeat: no-repeat;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
 
         min-height: 23em;
         background-size: cover;

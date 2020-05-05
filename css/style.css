@@ -557,7 +557,7 @@ body {
   width: 660px;
   margin: 1em auto;
   position: relative; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .site-nav {
       position: absolute;
       width: 100%;
@@ -868,6 +868,12 @@ section {
   position: relative; }
 
 /* Slides */
+@media (max-width: 767px) {
+  .slide-card:nth-child(1) {
+    display: none; }
+  .slide-card:nth-child(2) {
+    display: none; } }
+
 .mySlides {
   padding: 2em;
   text-align: center; }
@@ -892,7 +898,8 @@ section {
   color: #9b9b9b;
   font-family: "minion-3", serif;
   font-size: .875em;
-  margin: .7em; }
+  margin: .7em;
+  margin-top: 1.3em; }
 
 /* HOME - DON'T MISS OUT */
 .signup {
@@ -1025,7 +1032,7 @@ form {
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .about .hero {
       min-height: 23em;
       background-size: cover;
@@ -1115,7 +1122,7 @@ form {
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .product .hero {
       min-height: 23em;
       background-size: cover;
@@ -1238,7 +1245,7 @@ fade-in {
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .contact .hero {
       min-height: 23em;
       background-size: cover;
