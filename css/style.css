@@ -246,8 +246,9 @@ footer .info {
   font-weight: 300;
   letter-spacing: .01em;
   text-decoration: none; }
-  .contact .info:hover {
-    color: #CE1F0A; }
+
+.contact a:hover {
+  color: #CE1F0A; }
 
 button {
   font-size: inherit;

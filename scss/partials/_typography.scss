@@ -255,14 +255,11 @@ footer .info {
     font-weight: 300;
     letter-spacing: .01em;
     text-decoration: none;
-
-    &:hover {
-        color: $color-links;
-    }
-
 }
 
-
+.contact a:hover {
+    color: $color-links;
+}
 
 
 
