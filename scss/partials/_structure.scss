@@ -81,8 +81,8 @@
         padding: 0 1em;
         margin: 0 0.5em;
         &:hover {
-        color: rgba(255,255,255,1);
-        transition: all .4s ease;
+        color: $colot-accent-dark;
+        transition: all .2s ease;
         }
         }
 
@@ -147,6 +147,10 @@
         color: $color-accent;
         text-transform: uppercase;
         letter-spacing: .2em;
+        &:hover {
+            color: $colot-accent-dark;
+            transition: all .2s ease;
+            }
     }
 }
 
@@ -443,6 +447,10 @@ section {
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+
+    .para {
+        max-width: 400px;
+    }
 }
 
 /* FORMS */
@@ -456,6 +464,14 @@ form {
     justify-content: center;
 }
 
+.inputbox, 
+.inputbtn {
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
 .inputbox {
     height: 50px;
     border: none;
@@ -463,7 +479,7 @@ form {
     text-transform: uppercase;
     letter-spacing: .2em;
     text-indent: 1em;
-    margin-left: 1em;
+    margin-right: 1em;
     min-width: 20em;
     outline:none;
 }
@@ -537,8 +553,19 @@ form {
         color: $color-accent;
     }
 
+    a {
+        &:hover {
+            color: $colot-accent-dark;
+            transition: all .2s ease;
+            }
+    }
+
     img {
         max-width: 150px;
+        &:hover {
+            opacity: .7;
+            transition: all .2s ease;
+            }
     }
 
     @media (min-width: 768px) {
@@ -825,10 +852,6 @@ form {
 
 
 
-
-
-
-
 /* CONTACT */
 
 .contact .hero {
@@ -852,8 +875,6 @@ form {
     background-image: url(../img/bg-kagoshima-large@2x-min.jpg);
     background-size: cover;
     background-position: center;
-    // max-width: 100%;
-    // min-width: 100vw;
     background-repeat: no-repeat;
 }
 
@@ -885,7 +906,6 @@ form {
         margin-left: 0;
         outline:none;
         -webkit-appearance: none;
-        border-radius: 0;
     }
 
     input[type=text], textarea {

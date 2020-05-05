@@ -304,8 +304,6 @@ input[type="submit"] {
   padding: .9em 1.6em;
   display: inline-block;
   margin: 0;
-  margin-left: .8em;
-  margin-right: 0;
   border-radius: 3px;
   border: 1px solid #CE1F0A;
   cursor: pointer;
@@ -588,10 +586,10 @@ body {
         padding: 0 1em;
         margin: 0 0.5em; }
         .site-nav a:hover {
-          color: white;
-          -webkit-transition: all .4s ease;
-          -o-transition: all .4s ease;
-          transition: all .4s ease; }
+          color: #95704D;
+          -webkit-transition: all .2s ease;
+          -o-transition: all .2s ease;
+          transition: all .2s ease; }
       .site-nav.active {
         height: 100%;
         position: fixed;
@@ -653,7 +651,12 @@ body {
     font-size: 0.875em;
     color: #BA8C60;
     text-transform: uppercase;
-    letter-spacing: .2em; } }
+    letter-spacing: .2em; }
+    .site-nav ul li a:hover {
+      color: #95704D;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease; } }
 
 .logo {
   max-width: 103px;
@@ -907,6 +910,8 @@ section {
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat; }
+  .signup .para {
+    max-width: 400px; }
 
 /* FORMS */
 form {
@@ -920,6 +925,12 @@ form {
   -ms-flex-pack: center;
   justify-content: center; }
 
+@media (max-width: 767px) {
+  .inputbox,
+  .inputbtn {
+    width: 100%;
+    margin-bottom: 1em; } }
+
 .inputbox {
   height: 50px;
   border: none;
@@ -927,7 +938,7 @@ form {
   text-transform: uppercase;
   letter-spacing: .2em;
   text-indent: 1em;
-  margin-left: 1em;
+  margin-right: 1em;
   min-width: 20em;
   outline: none; }
 
@@ -978,8 +989,18 @@ form {
     padding: 0;
     text-align: left;
     color: #BA8C60; }
+  .site-footer a:hover {
+    color: #95704D;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease; }
   .site-footer img {
     max-width: 150px; }
+    .site-footer img:hover {
+      opacity: .7;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease; }
   @media (min-width: 768px) {
     .site-footer .column {
       min-width: 10%;
@@ -1278,8 +1299,7 @@ fade-in {
   width: 100%;
   margin-left: 0;
   outline: none;
-  -webkit-appearance: none;
-  border-radius: 0; }
+  -webkit-appearance: none; }
 
 .contact input[type=text], .contact textarea {
   padding: 1em;
