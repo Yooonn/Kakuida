@@ -866,13 +866,13 @@ form {
         width: 100%;
         margin-left: 0;
         outline:none;
+        -webkit-appearance: none;
+        border-radius: 0;
     }
 
     input[type=text], textarea {
         padding: 1em;
         margin-bottom: 1.2em;
-        -webkit-appearance: none;
-        border-radius: 0;
     }
 
     textarea {

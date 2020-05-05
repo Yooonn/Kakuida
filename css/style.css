@@ -312,7 +312,8 @@ input[type="submit"] {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  outline: none; }
+  outline: none;
+  -webkit-appearance: none; }
   input[type="submit"]:hover {
     color: #fff;
     background-color: #b31503;
@@ -323,8 +324,7 @@ input.text,
 input[type="text"],
 input[type="button"],
 input[type="submit"] {
-  -webkit-appearance: none;
-  border-radius: 0; }
+  -webkit-appearance: none; }
 
 .underline-link {
   font-size: .8em;
@@ -1258,7 +1258,9 @@ fade-in {
   display: block;
   width: 100%;
   margin-left: 0;
-  outline: none; }
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0; }
 
 .contact input[type=text], .contact textarea {
   padding: 1em;
