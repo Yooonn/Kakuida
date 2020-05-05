@@ -1048,26 +1048,36 @@ form {
 
 .about .hero {
   background-image: url(../img/kakuida-blackvinegar-hero-bg01.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
   @media (max-width: 767px) {
     .about .hero {
+      font-size: 70%;
       min-height: 23em;
       background-size: cover;
       background-position: center; } }
 
-.about .video-box {
-  border: none;
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
   -webkit-box-shadow: 0px 60px 120px -60px #3f3f1f;
   box-shadow: 0px 60px 120px -60px #3f3f1f;
-  position: relative;
-  margin-top: -20%;
-  outline: none;
-  max-width: 100%;
-  height: auto; }
+  margin-top: -20%; }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .ic-check {
   max-width: 1.4rem;
@@ -1138,13 +1148,14 @@ form {
 /* PRODUCT */
 .product .hero {
   background-image: url(../img/kakuida-blackvinegar-hero-bg02.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
   @media (max-width: 767px) {
     .product .hero {
+      font-size: 70%;
       min-height: 23em;
       background-size: cover;
       background-position: center; } }
@@ -1261,13 +1272,14 @@ fade-in {
 /* CONTACT */
 .contact .hero {
   background-image: url(../img/kakuida-blackvinegar-hero-bg03.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   max-width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat; }
   @media (max-width: 767px) {
     .contact .hero {
+      font-size: 70%;
       min-height: 23em;
       background-size: cover;
       background-position: center; } }
