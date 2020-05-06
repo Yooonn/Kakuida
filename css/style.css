@@ -580,10 +580,10 @@ body {
         list-style: none;
         z-index: 1; }
       .site-nav li {
-        font-size: 2.4em;
-        line-height: 2em;
+        font-size: 1.6em;
+        line-height: 2.4em;
         text-transform: uppercase;
-        letter-spacing: .1em;
+        letter-spacing: .15em;
         opacity: 0;
         text-align: center; }
       .site-nav a {
@@ -673,7 +673,8 @@ body {
   z-index: 4; }
   @media (max-width: 767px) {
     .logo {
-      margin-top: 1.2em; } }
+      margin-top: 1.4em;
+      max-width: 110px; } }
 
 /* MENU BUITTON */
 .menu-button {
