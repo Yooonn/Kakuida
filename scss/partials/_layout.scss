@@ -25,6 +25,12 @@ body {
 }
 
 
+@media (max-width: 767px) {
+    p {
+        font-size: 105%;
+    }
+}
+
 @media (min-width: $breakpoint-small) {
     body {
         font-size: 100%; // 16px

@@ -537,12 +537,18 @@ form {
     display: block;
     font-size: 90%;
 
+    @media (max-width: 767px) {
+        font-size: 105%;
+    }
+
     .container {
         padding: 0;
         margin-top: 3em;
         max-width: 1200px;
-        // margin-left: 1em;
-        // margin-right: 1em;
+
+        @media (max-width: 767px) {
+            margin-top: 1em;
+        }
     }
 
     .row {
@@ -553,6 +559,27 @@ form {
     .column {
         padding: 0;
         padding-left: 4.6em;
+
+        @media (max-width: 767px) {
+            padding-left: 0;
+        }
+    }
+
+    .footer-logo {
+        width: 6.5em;
+
+        @media (max-width: 767px) {
+            width: 7.5em;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        } 
+    }
+
+    .menu {
+        @media (max-width: 767px) {
+            margin-left: 1em;
+            margin-top: 2em;
+        }
     }
 
     .info {
@@ -561,12 +588,30 @@ form {
         margin-right: 0;
         line-height: 2.2em;
         // background-color: red;
+
+        @media (max-width: 767px) {
+            margin-left: 2em;
+            margin-top: 1.5em;
+        }
+    }
+
+    .amazon-banner {
+        @media (max-width: 767px) {
+            max-width: 60%;
+            margin: 2em;
+        }
     }
 
     .social {
-        // margin-left: 0;
         padding-left: 3em;
         padding-right: 3em;
+        padding-top: .4em;
+    }
+
+    .social ul li {
+        display: inline-block;
+        padding-left: 30px;
+        margin-bottom: 20px;
     }
 
     .one-whole.column {
@@ -617,27 +662,7 @@ form {
 
 }
 
-.footer-logo {
-    width: 6.5em;
-}
 
-// .text {
-//     background-color: rgb(69, 69, 69);
-// }
-
-.social {
-    // padding-left: 4em;
-    padding-top: .4em;
-}
-
-.social ul li {
-    display: inline-block;
-    padding-left: 30px;
-    // padding-right: 30px;
-    // padding-bottom: 20px;
-    margin-bottom: 20px;
-
-}
 
 
 /* ABOUT */
