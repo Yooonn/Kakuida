@@ -318,6 +318,11 @@ section {
     background-image: url(../img/bg-pattern01@2x-min.jpg);
     background-size: contain;
     background-position: center;
+
+    @media (max-width:767px) {
+        background-image: none;
+
+    }
 }
 
 .topselling-card .container {
@@ -330,6 +335,13 @@ section {
     margin-top: -10%;
     position: relative;
     z-index: 1;
+
+    @media (max-width:767px) {
+        border-radius: 0;
+        box-shadow: none;
+        margin-top: -19%;
+        padding-bottom: 0;
+    }
 } 
 
 .deals {
@@ -365,10 +377,19 @@ section {
     // min-height: auto;
 }
 
+.text-align-left {
+    text-align: left;
+}
+
 .process {
     mix-blend-mode: darken;
     max-width: 95%;
     height: auto;
+
+    @media (max-width:767px) {
+        width: 100%;
+        margin-top: 2em;
+    }
 }
 
 /* HOME - OUR CUSTOMERS SAY */
@@ -398,7 +419,10 @@ section {
 
 /* Slides */
 
-
+.swiper-button-prev, 
+.swiper-button-next {
+    outline: none;
+}
 
 @media (max-width: 767px) {
     .slide-card {
@@ -492,6 +516,10 @@ form {
     background-repeat: no-repeat;
     background-position: bottom center;
     height: 40em;
+
+    @media (max-width:767px) {
+        height: 33em;
+    }
 }
 
 .amazon-logo {

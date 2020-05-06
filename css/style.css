@@ -805,6 +805,9 @@ section {
   background-image: url(../img/bg-pattern01@2x-min.jpg);
   background-size: contain;
   background-position: center; }
+  @media (max-width: 767px) {
+    .topselling {
+      background-image: none; } }
 
 .topselling-card .container {
   background-color: white;
@@ -817,6 +820,13 @@ section {
   margin-top: -10%;
   position: relative;
   z-index: 1; }
+  @media (max-width: 767px) {
+    .topselling-card .container {
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      margin-top: -19%;
+      padding-bottom: 0; } }
 
 .deals {
   display: -ms-grid;
@@ -848,10 +858,17 @@ section {
   background-size: cover;
   background-position: center; }
 
+.text-align-left {
+  text-align: left; }
+
 .process {
   mix-blend-mode: darken;
   max-width: 95%;
   height: auto; }
+  @media (max-width: 767px) {
+    .process {
+      width: 100%;
+      margin-top: 2em; } }
 
 /* HOME - OUR CUSTOMERS SAY */
 .testimonial {
@@ -872,6 +889,10 @@ section {
   position: relative; }
 
 /* Slides */
+.swiper-button-prev,
+.swiper-button-next {
+  outline: none; }
+
 @media (max-width: 767px) {
   .slide-card:nth-child(1) {
     display: none; }
@@ -950,6 +971,9 @@ form {
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 40em; }
+  @media (max-width: 767px) {
+    .amazon {
+      height: 33em; } }
 
 .amazon-logo {
   max-width: 45px;
