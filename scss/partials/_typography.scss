@@ -118,11 +118,12 @@ a:hover {color:$color-links-dark;}
     letter-spacing: .1em;
     margin-top: 0;
     margin-bottom: 1em;
+    color: $color-text-light;
 }
 
 .h2-italic {
     font-style: italic;
-    text-transform: none;
+    text-transform: lowercase;
     color: $color-accent;
 }
 

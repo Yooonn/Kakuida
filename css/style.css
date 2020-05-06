@@ -67,14 +67,14 @@ h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.875em;
-  color: #858382;
+  color: #646464;
   text-transform: uppercase;
   letter-spacing: .3em;
   text-align: center; }
 
 p {
   max-width: 43.75em;
-  color: #858382;
+  color: #646464;
   margin: 2em auto;
   font-weight: 300;
   letter-spacing: .01em; }
@@ -132,11 +132,12 @@ a:hover {
   font-size: .75em;
   letter-spacing: .1em;
   margin-top: 0;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  color: #858382; }
 
 .h2-italic {
   font-style: italic;
-  text-transform: none;
+  text-transform: lowercase;
   color: #BA8C60; }
 
 footer .col ul li {
@@ -242,7 +243,7 @@ footer .info {
 .contact .info {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  color: #858382;
+  color: #646464;
   font-weight: 300;
   letter-spacing: .01em;
   text-decoration: none; }
@@ -329,13 +330,13 @@ input[type="submit"] {
   font-size: .8em;
   letter-spacing: .3em;
   text-transform: uppercase;
-  color: #858382;
+  color: #646464;
   padding: .5em 0;
   margin: .5em auto .5em auto;
   margin-bottom: 2em;
   cursor: pointer;
   text-decoration: none;
-  border-bottom: 1.5px solid #858382;
+  border-bottom: 1.5px solid #646464;
   -webkit-transition: all 0.25s linear;
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear; }
@@ -343,7 +344,7 @@ input[type="submit"] {
     border-bottom: 1.5px solid #CE1F0A; }
 
 .btn {
-  color: #858382;
+  color: #646464;
   font-weight: 400;
   letter-spacing: .15em;
   margin: .8em;
@@ -1165,7 +1166,7 @@ form {
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
-  min-height: 50%; }
+  min-height: 40%; }
 
 .product .call-to-action-1 {
   background-image: url(../img/bg-Kakuida-CallToAction@2x-min.jpg);
