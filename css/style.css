@@ -962,14 +962,23 @@ section {
 
 .mySlides {
   padding: 2em;
-  text-align: center; }
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .slide-card {
   display: inline-block;
   width: 19.5em;
   height: 16.5em;
   background: rgba(0, 0, 0, 0.523);
-  padding: 2.5em;
+  padding: 2.5em 2em 0 2em;
   margin: 1em; }
 
 .star-rate {

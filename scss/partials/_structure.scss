@@ -453,6 +453,9 @@ section {
     // display: none;
     padding: 2em;
     text-align: center;
+    display:flex;    
+    align-items:flex-start;
+    justify-content: center;
 }
 
 .slide-card {
@@ -460,7 +463,7 @@ section {
     width: 19.5em;
     height: 16.5em;
     background: rgba(0, 0, 0, 0.523);
-    padding: 2.5em;
+    padding: 2.5em 2em 0 2em;
     margin: 1em;
 }
 
