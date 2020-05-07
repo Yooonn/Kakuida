@@ -105,6 +105,11 @@ a:hover {
   margin: 0 auto;
   margin-top: 2.5em; }
 
+@media (max-width: 767px) {
+  .section-header {
+    margin-left: 1em;
+    margin-right: 1em; } }
+
 .section-header h5 {
   margin: .7em; }
 
@@ -175,18 +180,24 @@ footer .info {
   font-style: italic;
   letter-spacing: 0;
   line-height: 1.4em;
-  max-width: 653px;
+  max-width: 550px;
   margin: .8em auto;
   padding-top: .9em; }
+  @media (max-width: 767px) {
+    .about .h2-head-italic {
+      font-size: 2.1em; } }
 
 .about .history-p {
-  max-width: 620px;
+  max-width: 550px;
   -webkit-transition-delay: .1s;
   -o-transition-delay: .1s;
-  transition-delay: .1s; }
+  transition-delay: .1s;
+  text-align: left; }
 
-.about .break {
-  margin-bottom: 1em; }
+.about br {
+  content: "";
+  margin: 1em;
+  display: block; }
 
 .about .main-head {
   color: #CE1F0A;
@@ -196,13 +207,16 @@ footer .info {
   text-transform: capitalize;
   letter-spacing: .07em;
   margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .about .main-head {
+      font-size: 1.3em; } }
 
 .about .paragraph-left {
   text-align: left;
   margin-top: .5em;
   margin-left: 0;
   margin-right: 0;
-  width: 389px; }
+  max-width: 389px; }
 
 .product .main-head {
   font-size: 1.625em;
@@ -1137,6 +1151,15 @@ form {
 .ic-check {
   max-width: 1.4rem;
   margin-right: .6em; }
+  @media (max-width: 767px) {
+    .ic-check {
+      -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+      transform: translateY(4px); } }
+
+@media (max-width: 767px) {
+  .split-crossed-left {
+    margin-top: 60px; } }
 
 @media (min-width: 768px) {
   .split-crossed-left .container {
@@ -1188,6 +1211,11 @@ form {
   -webkit-transform: translateX(2em);
   -ms-transform: translateX(2em);
   transform: translateX(2em); }
+  @media (max-width: 767px) {
+    [data-scroll="in"].split-crossed-left .image-block {
+      -webkit-transform: translateX(-1em);
+      -ms-transform: translateX(-1em);
+      transform: translateX(-1em); } }
 
 [data-scroll].split-crossed-reversed .image-block,
 [data-scroll].split-crossed-reversed .text-block {
@@ -1199,6 +1227,11 @@ form {
   -webkit-transform: translateX(-2em);
   -ms-transform: translateX(-2em);
   transform: translateX(-2em); }
+  @media (max-width: 767px) {
+    [data-scroll="in"].split-crossed-reversed .image-block {
+      -webkit-transform: translateX(1em);
+      -ms-transform: translateX(1em);
+      transform: translateX(1em); } }
 
 /* PRODUCT */
 .product .hero {

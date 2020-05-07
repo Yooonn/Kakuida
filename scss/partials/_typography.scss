@@ -86,6 +86,13 @@ a:hover {color:$color-links-dark;}
     margin-top: 2.5em;
 }
 
+.section-header {
+    @media (max-width:767px) {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
 .section-header h5 {
     margin: .7em;
 }
@@ -175,18 +182,30 @@ footer .info {
     font-style: italic;
     letter-spacing: 0;
     line-height: 1.4em;
-    max-width: 653px;
+    max-width: 550px;
     margin: .8em auto;
     padding-top: .9em;
+
+    @media (max-width:767px) {
+        // text-align: left;
+        font-size: 2.1em;
+    }
 }
 
 .about .history-p {
-    max-width: 620px;
+    max-width: 550px;
     transition-delay: .1s;
+    text-align: left;
+
+    @media (max-width:767px) {
+        
+    }
 }
 
-.about .break {
-    margin-bottom: 1em;
+.about br {
+    content: "";
+    margin: 1em;
+    display: block;
 }
 
 .about .main-head {
@@ -197,6 +216,11 @@ footer .info {
     text-transform: capitalize;
     letter-spacing: .07em;
     margin-bottom: 0;
+
+    @media (max-width:767px) {
+        font-size: 1.3em;  
+    }
+
 }
 
 .about .paragraph-left {
@@ -204,7 +228,7 @@ footer .info {
     margin-top: .5em;
     margin-left: 0;
     margin-right: 0;
-    width: 389px;
+    max-width: 389px;
 }
 
 .product .main-head {
@@ -262,30 +286,5 @@ footer .info {
     color: $color-links;
 }
 
-
-
-
-
-
-
-// HELPER
-// .sectionhead {
-//     text-align: center;
-//     font-family: $body-fontfamily;
-//     font-weight: 700;
-//     font-size: 1em;
-//     line-height: 1em;
-//     text-transform: uppercase;
-//     letter-spacing: .4em;
-//     margin-bottom: 2em;
-// }
-
-// .meta {
-//     display: block;
-//     font-size: .8em;
-//     color: $body-fontfamily;
-//     margin: 0 0 2em 0;
-
-// }
 
 
