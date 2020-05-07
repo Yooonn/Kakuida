@@ -202,6 +202,9 @@ footer .info {
   @media (max-width: 767px) {
     .about .h2-head-italic {
       font-size: 2.1em; } }
+  @media (min-width: 1250px) {
+    .about .h2-head-italic {
+      max-width: 600px; } }
 
 .about .history-p {
   max-width: 550px;

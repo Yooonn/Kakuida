@@ -212,6 +212,10 @@ footer .info {
         // text-align: left;
         font-size: 2.1em;
     }
+
+    @media (min-width:$breakpoint-large) {
+        max-width: 600px;
+    }
 }
 
 .about .history-p {
