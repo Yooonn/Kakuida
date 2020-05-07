@@ -367,6 +367,10 @@ section {
     margin: 1em auto;
     margin-bottom: 0;
     // border: 1px solid grey;
+
+    @media (max-width:767px) {
+        font-size: 115%;
+    }
 }
 
 .product-item .item-img {

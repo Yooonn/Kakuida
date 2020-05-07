@@ -91,8 +91,11 @@ a:hover {
   color: white;
   text-transform: uppercase;
   font-style: normal;
-  line-height: 1em;
+  line-height: 1.06em;
   margin: .5em 0 .8em 0; }
+  @media (max-width: 767px) {
+    .hero-mainhead {
+      font-size: 2.9em; } }
 
 .hero-subhead {
   color: #BA8C60;
@@ -104,6 +107,9 @@ a:hover {
   text-align: center;
   margin: 0 auto;
   margin-top: 2.5em; }
+  @media (max-width: 767px) {
+    .hero-subhead {
+      font-size: 1.25em; } }
 
 @media (max-width: 767px) {
   .section-header {
@@ -881,6 +887,9 @@ section {
   max-width: 210px;
   margin: 1em auto;
   margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .product-item {
+      font-size: 115%; } }
 
 .product-item .item-img {
   margin-bottom: 1em; }
