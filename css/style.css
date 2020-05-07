@@ -1034,12 +1034,15 @@ form {
         margin-top: 1.5em; } }
   @media (max-width: 767px) {
     .site-footer .amazon-banner {
-      max-width: 60%;
+      max-width: 50%;
       margin: 2em; } }
   .site-footer .social {
     padding-left: 3em;
     padding-right: 3em;
     padding-top: .4em; }
+  @media (max-width: 767px) {
+    .site-footer .social ul {
+      text-align: center; } }
   .site-footer .social ul li {
     display: inline-block;
     padding-left: 30px;

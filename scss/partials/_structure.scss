@@ -598,7 +598,7 @@ form {
 
     .amazon-banner {
         @media (max-width: 767px) {
-            max-width: 60%;
+            max-width: 50%;
             margin: 2em;
         }
     }
@@ -608,6 +608,12 @@ form {
         padding-right: 3em;
         padding-top: .4em;
     }
+
+    .social ul {
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    } 
 
     .social ul li {
         display: inline-block;
