@@ -148,8 +148,18 @@ a:hover {
 
 .h2-italic {
   font-style: italic;
-  text-transform: lowercase;
-  color: #BA8C60; }
+  text-transform: capitalize !important;
+  color: #BA8C60;
+  letter-spacing: .03em; }
+
+.signup-h2 {
+  text-transform: capitalize !important;
+  letter-spacing: .02em; }
+
+.amazon-h2 {
+  text-transform: none !important;
+  letter-spacing: .02em;
+  font-style: italic; }
 
 footer .col ul li {
   color: #BA8C60;
@@ -923,6 +933,10 @@ section {
 :root {
   --swiper-theme-color: #888; }
 
+@media (max-width: 767px) {
+  :root {
+    --swiper-navigation-size: 22px; } }
+
 .swiper-container {
   width: 100%;
   min-height: 300px; }
@@ -936,10 +950,12 @@ section {
   outline: none; }
 
 @media (max-width: 767px) {
-  .slide-card:nth-child(1) {
-    display: none; }
-  .slide-card:nth-child(2) {
-    display: none; } }
+  .slide-card {
+    margin: 0 0 1em 0 !important; }
+    .slide-card:nth-child(1) {
+      display: none; }
+    .slide-card:nth-child(2) {
+      display: none; } }
 
 .mySlides {
   padding: 2em;
@@ -1020,7 +1036,7 @@ form {
 .amazon-logo {
   max-width: 45px;
   height: auto;
-  margin-bottom: 1.4em; }
+  margin-bottom: 1em; }
 
 /* FOOTER */
 .site-footer {

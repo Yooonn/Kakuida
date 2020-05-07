@@ -416,6 +416,13 @@ section {
     --swiper-theme-color: #888;
 }
 
+@media (max-width:767px) {
+    :root {
+        --swiper-navigation-size: 22px;
+    }
+}
+
+
 .swiper-container {
     width: 100%;
     min-height: 300px;
@@ -435,6 +442,8 @@ section {
 
 @media (max-width: 767px) {
     .slide-card {
+        margin: 0 0 1em 0 !important;
+
         &:nth-child(1) { display: none };
         &:nth-child(2) { display: none };
     }
@@ -534,7 +543,7 @@ form {
 .amazon-logo {
     max-width: 45px;
     height: auto;
-    margin-bottom: 1.4em;
+    margin-bottom: 1em;
 }
 
 /* FOOTER */

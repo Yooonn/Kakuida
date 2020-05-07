@@ -140,8 +140,20 @@ a:hover {color:$color-links-dark;}
 
 .h2-italic {
     font-style: italic;
-    text-transform: lowercase;
+    text-transform: capitalize !important;
     color: $color-accent;
+    letter-spacing: .03em;
+}
+
+.signup-h2 {
+    text-transform: capitalize !important;
+    letter-spacing: .02em;
+}
+
+.amazon-h2{
+    text-transform: none !important;
+    letter-spacing: .02em;
+    font-style: italic;
 }
 
 footer .col ul li {
