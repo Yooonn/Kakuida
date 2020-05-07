@@ -247,6 +247,14 @@ footer .info {
 
 .product .sub-text {
     color: $color-accent;
+
+    @media (max-width:767px) {
+        padding: 70px 20px 0 20px;
+    }
+
+    @media (min-width:1300px) {
+        margin-top: 6em;
+    }
 }
 
 .product .main-text {
@@ -255,6 +263,13 @@ footer .info {
     line-height: 1.4em;
     color: #393939;
     margin-top: 0;
+
+    @media (max-width:767px) {
+        font-size: 1.6em;
+        br {
+            display: none;
+        }
+    }
 }
 
 .contact .contact-area h3 {
