@@ -156,6 +156,30 @@ a:hover {
   text-transform: capitalize !important;
   letter-spacing: .02em; }
 
+input::-webkit-input-placeholder {
+  opacity: 50%; }
+
+input:-ms-input-placeholder {
+  opacity: 50%; }
+
+input::-ms-input-placeholder {
+  opacity: 50%; }
+
+input::placeholder {
+  opacity: 50%; }
+
+textarea::-webkit-input-placeholder {
+  opacity: 50%; }
+
+textarea:-ms-input-placeholder {
+  opacity: 50%; }
+
+textarea::-ms-input-placeholder {
+  opacity: 50%; }
+
+textarea::placeholder {
+  opacity: 50%; }
+
 .amazon-h2 {
   text-transform: none !important;
   letter-spacing: .02em;
@@ -278,6 +302,7 @@ footer .info {
   margin-top: 1.5em; }
 
 .contact .label {
+  opacity: 70%;
   font-size: 75%;
   text-align: left;
   letter-spacing: .25em;
@@ -1024,12 +1049,12 @@ form {
     margin-bottom: 1em; } }
 
 .inputbox {
+  font-size: 80%;
   height: 50px;
   border: none;
   font-family: inherit;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  text-indent: 1em;
+  letter-spacing: .07em;
+  padding: 1em;
   margin-right: 1em;
   min-width: 20em;
   outline: none; }
@@ -1446,10 +1471,10 @@ fade-in {
   background-position: center;
   background-repeat: no-repeat; }
 
-.contact .column {
+.contact .one-half {
   text-align: left; }
 
-.contact .row {
+.contact-area .row {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline; }

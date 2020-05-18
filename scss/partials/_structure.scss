@@ -518,15 +518,17 @@ form {
 }
 
 .inputbox {
+    font-size: 80%;
     height: 50px;
     border: none;
     font-family: inherit;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    text-indent: 1em;
+    // text-transform: uppercase;
+    letter-spacing: .07em;
+    // text-indent: 1em;
+    padding: 1em;
     margin-right: 1em;
     min-width: 20em;
-    outline:none;
+    outline: none;
 }
 
 /* HOME - FIND US ON AMAZON */
@@ -1005,11 +1007,11 @@ form {
     background-repeat: no-repeat;
 }
 
-.contact .column {
+.contact .one-half {
     text-align: left;
 }
 
-.contact .row {
+.contact-area .row {
     align-items: baseline;
 }
 

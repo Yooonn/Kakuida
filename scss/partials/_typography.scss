@@ -150,6 +150,14 @@ a:hover {color:$color-links-dark;}
     letter-spacing: .02em;
 }
 
+input::placeholder {
+    opacity: 50%;
+}
+
+textarea::placeholder {
+    opacity: 50%;
+}
+
 .amazon-h2{
     text-transform: none !important;
     letter-spacing: .02em;
@@ -307,6 +315,7 @@ footer .info {
 }
 
 .contact .label {
+    opacity: 70%;
     font-size: 75%;
     text-align: left;
     letter-spacing: .25em;
