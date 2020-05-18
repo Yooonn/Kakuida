@@ -1285,6 +1285,9 @@ form {
       transform: translateX(1em); } }
 
 /* PRODUCT */
+.product {
+  overflow-x: hidden; }
+
 .product .hero {
   background-image: url(../img/kakuida-blackvinegar-hero-bg02.jpg);
   background-size: cover;
