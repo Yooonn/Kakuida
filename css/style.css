@@ -152,6 +152,11 @@ a:hover {
   color: #BA8C60;
   letter-spacing: .03em; }
 
+.blackvinegar br {
+  content: "";
+  margin: 1em;
+  display: block; }
+
 .signup-h2 {
   text-transform: capitalize !important;
   letter-spacing: .02em; }
@@ -237,7 +242,7 @@ footer .info {
   transition-delay: .1s;
   text-align: left; }
 
-.about br {
+.history-p br {
   content: "";
   margin: 1em;
   display: block; }
@@ -360,6 +365,24 @@ button,
   @media (min-width: 768px) {
     button.ShopNow,
     .button.ShopNow {
+      font-size: 70%;
+      padding: .9em 1.8em;
+      margin-top: .9em; } }
+
+.soldout {
+  font-size: .8em;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  padding: .9em 1.6em;
+  display: inline-block;
+  margin: .5em auto .5em auto;
+  border-radius: 3px;
+  margin-bottom: 2em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-decoration: none; }
+  @media (min-width: 768px) {
+    .soldout {
       font-size: 70%;
       padding: .9em 1.8em;
       margin-top: .9em; } }

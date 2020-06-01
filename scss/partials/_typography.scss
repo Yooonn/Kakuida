@@ -138,11 +138,18 @@ a:hover {color:$color-links-dark;}
     color: $color-text-light;
 }
 
+
 .h2-italic {
     font-style: italic;
     text-transform: capitalize !important;
     color: $color-accent;
     letter-spacing: .03em;
+}
+
+.blackvinegar br {
+    content: "";
+    margin: 1em;
+    display: block;
 }
 
 .signup-h2 {
@@ -236,7 +243,7 @@ footer .info {
     }
 }
 
-.about br {
+.history-p br {
     content: "";
     margin: 1em;
     display: block;

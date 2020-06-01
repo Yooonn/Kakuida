@@ -51,6 +51,27 @@ button,
     }
 }
 
+.soldout {
+    font-size: .8em;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    // background-color: rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .4);
+    padding: .9em 1.6em;
+    display: inline-block;
+    margin: .5em auto .5em auto;
+    border-radius: 3px;
+    margin-bottom: 2em;
+    border: 1px solid rgba(0, 0, 0, .3);
+    text-decoration: none;
+
+    @media (min-width:768px) {
+            font-size: 70%;
+            padding: .9em 1.8em;
+            margin-top: .9em;
+    }
+}
+
 input[type="submit"] {
     font-size: .8em;
     letter-spacing: .3em;
