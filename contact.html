@@ -46,7 +46,10 @@
     <div class="container">
       <div class="row">
           <div class="one-half column">
-              <h3>Contact info</h3>
+              <h3>Contact 
+                Info</h3>
+              <img class="essan" src="img/Essan-logo.png" alt="Essan logo">
+              <p class="essan-p">Essan Inc. was established in the US to introduce and distribute Japanese black vinegar. We look forward to contributing to the promotion of food culture and healthy eating.</p>
               <h5 class="label">Address</h5>
               <p class="info">2370 W. Carson st. #130, Torrance, CA 90501</p>
               <!-- <h5 class="label">Phone</h5>
@@ -58,11 +61,14 @@
             <div class="getintouch">
               <h3>Get in Touch</h3>
               <p>If you have questions or need help, please contact us. We value your feedback and would love to hear from you.</p>
-              <form action="php/contact-form-process.php" method="post">
-                  <input type="text" id="Name" class="inputbox" name="Name" placeholder="Name" />
-                  <input type="text" id="Email" class="inputbox" name="Email" placeholder="Email" />
-                  <textarea id="Message" class="inputbox" name="Message" placeholder="Message"></textarea>                        
-                  <input type="submit" value="submit" />
+              <h4 class="sent-notification"></h4>
+              <form id='myForm'>
+                <input type="text" id="name" class="inputbox" placeholder="Name">
+                <input type="text" id="email" class="inputbox" placeholder="Email">
+                <input type="text" id="subject" class="inputbox" placeholder="Subject">
+                <textarea id="body" class="inputbox" name="Message" placeholder="Message"></textarea>        
+                <button type="button" onclick="sendEmail()" value="Send An Email">Submit</button>              
+                <!-- <input type="submit" onclick="sendEmail()" value="Submit"> -->
               </form>
             </div>
           </div>
@@ -73,42 +79,6 @@
 
 
 
-  <div class="fcf-body">
-
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
-
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact-form-process.php">
-        
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-        </div>
-
-    </form>
-    </div>
-
-</div>
 
 
 
@@ -190,6 +160,46 @@
 
   <!-- MAIN JS -->
   <script src="js/script.js"></script>
+
+  <!-- EMAIL JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript">
+    function sendEmail(){
+      var name = $("#name");
+      var email = $("#email");
+      var subject = $("#subject");
+      var body = $("#body");
+  
+      if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)){
+        $.ajax({
+          url: 'sendEmail.php',
+          method: 'POST',
+          dataType: 'json',
+          data:{
+            name: name.val(),
+            email: email.val(),
+            subject: subject.val(),
+            body: body.val()
+          }, success: function(response){
+            $('#myForm')[0].reset();
+            $('.sent-notification').text("Message sent successfully.");
+          }
+        });
+      }
+    }
+    function isNotEmpty(caller){
+      if(caller.val() == ""){
+        caller.css('border','1px solid red');
+        return false;
+      }
+      else
+      {
+        caller.css('border', '');
+        return true;
+      }
+    }
+  </script>
 
 </body>
 

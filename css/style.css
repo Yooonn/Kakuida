@@ -1494,6 +1494,14 @@ fade-in {
   background-position: center;
   background-repeat: no-repeat; }
 
+.essan {
+  max-width: 150px;
+  height: auto;
+  margin-top: .9em; }
+
+.essan-p {
+  margin-top: .6em; }
+
 .contact .one-half {
   text-align: left; }
 
@@ -1507,7 +1515,6 @@ fade-in {
 
 /* FORMS */
 .contact form {
-  max-width: 410px;
   margin-top: .5em; }
 
 .contact input, .contact textarea {
