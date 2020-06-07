@@ -625,6 +625,13 @@ form {
         }
     }
 
+    .essan-wh {
+        max-width: 100px;
+        @media (max-width: 767px) {
+            margin-top: 1em;
+        }
+    }
+
     .social {
         padding-left: 3em;
         padding-right: 3em;
@@ -780,6 +787,11 @@ form {
 }
 
 .split-crossed-reversed {
+
+    @media (max-width:767px) {
+        margin-top: 60px;
+    }
+    
     @media (min-width: $breakpoint-small) {
         
     .container {
@@ -814,7 +826,7 @@ form {
 [data-scroll="in"].split-crossed-left .image-block  {
   transform: translateX(2em);
   @media (max-width:767px) {
-    transform: translateX(-1em);
+    transform: translateX(.3em);
   }
 
 }
